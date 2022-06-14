@@ -4,15 +4,26 @@ go
 
 CREATE TABLE Members.Members
 (
-    member_id       int      NOT NULL IDENTITY (1,1),
+    member_ID       int      NOT NULL IDENTITY (1,1),
     first_name      char(25) NOT NULL,
     middle_name     char(25) NULL,
     last_name       char(25) NOT NULL,
     date_of_birth   date     NOT NULL,
     card_issue_date date     NOT NULL,
 
-    PRIMARY KEY (member_id)
+    PRIMARY KEY (member_ID)
 )
 ;
 
 go
+
+exec sp_columns Members
+
+DELETE FROM Members.Members WHERE first_name is null or last_name is null ;
+
+/* Delete all entries from database*/
+    Delete from Members.Adults
+    Delete from Members.Juveniles
+    Delete from Members.Addresses
+    Delete from Members.Members
+    Delete from Members.Cities

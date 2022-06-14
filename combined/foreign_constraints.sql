@@ -35,6 +35,7 @@ ADD CONSTRAINT fk_Addresses_Cities
 FOREIGN KEY (city_ID) REFERENCES Members.Cities(city_ID);
 ;
 go
+alter table Members.Addresses drop constraint fk_Addresses_Cities;
 
 alter table Items.AuthorComposite
     ADD CONSTRAINT fk_AuthorComposite_titles

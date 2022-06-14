@@ -28,5 +28,3 @@ where i.title_ID = t.title_ID
 ;
 
 select*from CopywideView;
-
-
