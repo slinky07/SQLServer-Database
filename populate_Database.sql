@@ -119,18 +119,18 @@ insert into Items.GenreComposite (genre_ID, title_ID) values (7, 15);
 insert into Items.GenreComposite (genre_ID, title_ID) values (8, 16);
 
 -- populate table Items
-insert into Items.Items (isbn_id, title_ID, copy_ID, binding, translation) VALUES ( '80-902734-1-6', 1, 1, 'Hardcover', 'English');
+insert into Items.Items (isbn_id, title_ID, copy_ID, binding, translation) VALUES ( '80-902734-1-6', 1, 1, 'Paperback', 'English');
 insert into Items.Items (isbn_id, title_ID, copy_ID, binding) VALUES ( '10-902734-1-6', 1, 2, 'Hardcover');
 insert into Items.Items (isbn_id, title_ID, copy_ID, binding, translation) VALUES ( '80-902734-1-7', 1, 3, 'Hardcover', 'English');
 insert into Items.Items (isbn_id, title_ID, copy_ID, binding) VALUES ( '20-902734-1-6', 1, 4, 'Hardcover');
 insert into Items.Items (isbn_id, title_ID, copy_ID, binding, translation) VALUES ( '80-902734-1-8', 1, 5, 'Hardcover', 'English');
-insert into Items.Items (isbn_id, title_ID, copy_ID, binding, translation) VALUES ( '80-902734-1-9', 1, 6, 'Hardcover', 'English');
+insert into Items.Items (isbn_id, title_ID, copy_ID, binding, translation) VALUES ( '80-902734-1-9', 1, 6, 'Paperback', 'English');
 insert into Items.Items (isbn_id, title_ID, copy_ID, binding) VALUES ( '30-902734-1-6', 1, 7, 'Hardcover');
 insert into Items.Items (isbn_id, title_ID, copy_ID, binding, translation) VALUES ( '80-902734-2-9', 2, 8, 'Hardcover', 'English');
-insert into Items.Items (isbn_id, title_ID, copy_ID, binding, translation) VALUES ( '80-902734-3-6', 3, 9, 'Hardcover', 'English');
+insert into Items.Items (isbn_id, title_ID, copy_ID, binding, translation) VALUES ( '80-902734-3-6', 3, 9, 'Paperback', 'English');
 insert into Items.Items (isbn_id, title_ID, copy_ID, binding, translation) VALUES ( '80-902734-4-6', 4, 10, 'Hardcover', 'English');
 insert into Items.Items (isbn_id, title_ID, copy_ID, binding) VALUES ( '40-902734-1-6', 2, 11, 'Hardcover');
-insert into Items.Items (isbn_id, title_ID, copy_ID, binding, translation) VALUES ( '80-902734-5-6', 4, 12, 'Hardcover', 'English');
+insert into Items.Items (isbn_id, title_ID, copy_ID, binding, translation) VALUES ( '80-902734-5-6', 4, 12, 'Paperback', 'English');
 insert into Items.Items (isbn_id, title_ID, copy_ID, binding, translation) VALUES ( '80-902734-6-6', 5, 13, 'Hardcover', 'English');
 insert into Items.Items (isbn_id, title_ID, copy_ID, binding, translation) VALUES ( '80-902734-7-6', 6, 14, 'Hardcover', 'English');
 insert into Items.Items (isbn_id, title_ID, copy_ID, binding) VALUES ( '50-902734-1-6', 7, 15, 'Hardcover');
