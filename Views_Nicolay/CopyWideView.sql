@@ -13,7 +13,7 @@ select i.isbn_ID     as ISBN,
        i.binding     as 'Binding',
        i.translation as 'Language',
        t.synopsis    as 'Description',
-       c.on_loan     as 'Loanable',
+       c.on_loan     as 'Copies on Loan',
        c.copy_amt    as 'Copies'
 
 from Items.Copies as c,
