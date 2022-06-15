@@ -5,7 +5,7 @@
 use master;
 use AragonMunicipalLibrary
 ;
-
+-- TODO - display every genre and every author for each book. This is a bit of a pain. Many to many relationship for those.
 create view CopywideView as
 select i.isbn_ID     as ISBN,
        t.title       as 'Title',
@@ -16,10 +16,10 @@ select i.isbn_ID     as ISBN,
        c.on_loan     as 'Copies on Loan',
        c.copy_amt    as 'Copies'
 
-from Items.Copies as c,
-     Items.Publisher as p,
-     Items.Titles as t,
-     Items.Items as i
+from ItemCollection.Copies as c,
+     ItemCollection.Publisher as p,
+     ItemCollection.Titles as t,
+     ItemCollection.Items as i
 
 where i.title_ID = t.title_ID
             and t.publisher_ID = p.publisher_ID

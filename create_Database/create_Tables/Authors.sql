@@ -2,7 +2,7 @@ use AragonMunicipalLibrary
 ;
 go
 
-create table Items.Authors
+create table ItemCollection.Authors
 (
     author_ID   int         not null IDENTITY (1,1) PRIMARY KEY,
     first_name   varchar(50) NOT NULL,

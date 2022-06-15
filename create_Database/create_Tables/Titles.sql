@@ -3,7 +3,7 @@ use AragonMunicipalLibrary
 go
 
 
-create table Items.Titles
+create table ItemCollection.Titles
 (
     title_ID     int           not null IDENTITY (1,1) primary key,
     title        varchar(100)  not null,

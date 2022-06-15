@@ -9,9 +9,9 @@ create view MailingList_View as
 select concat_ws(' ', first_name, middle_name, last_name) as 'Full Name',
        ad.address_ID, city_ID, unit_number, civic_number, street, province, postal_code as 'Mailing Address'
 
-from Members.Members as m,
-     Members.Adults as a,
-     Members.Addresses as ad
+from Membership.Members as m,
+     Membership.Adults as a,
+     Membership.Addresses as ad
 
 where a.member_id = m.member_id
   and a.address_id = ad.address_id

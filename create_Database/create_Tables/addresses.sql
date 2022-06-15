@@ -2,7 +2,7 @@ use AragonMunicipalLibrary
 ;
 go
 
-create table Members.Addresses
+create table Membership.Addresses
 (
     address_ID   int primary key not null identity (1,1),
     city_ID      int             not null,

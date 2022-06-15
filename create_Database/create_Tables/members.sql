@@ -2,7 +2,7 @@ use AragonMunicipalLibrary
 ;
 go
 
-CREATE TABLE Members.Members
+CREATE TABLE Membership.Members
 (
     member_ID       int      NOT NULL IDENTITY (1,1),
     first_name      char(25) NOT NULL,
@@ -17,7 +17,7 @@ CREATE TABLE Members.Members
 
 go
 
-exec sp_columns Members
+/*exec sp_columns Members
 
 DELETE FROM Members.Members WHERE first_name is null or last_name is null ;
 
@@ -26,4 +26,4 @@ DELETE FROM Members.Members WHERE first_name is null or last_name is null ;
     Delete from Members.Juveniles
     Delete from Members.Addresses
     Delete from Members.Members
-    Delete from Members.Cities
+    Delete from Members.Cities*/

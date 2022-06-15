@@ -11,9 +11,9 @@ select concat_ws('', m.first_name, middle_name, m.last_name) as 'Full Name',
         r.isbn_ID as 'ISBN',
         r.log_date as 'Date'
 
-from Members.Members as m,
-    Items.Titles as t,
-    Items.Items as i,
+from Membership.Members as m,
+    ItemCollection.Titles as t,
+    ItemCollection.Items as i,
     Borrows.Reservations as r
 
 where r.isbn_ID = i.isbn_ID

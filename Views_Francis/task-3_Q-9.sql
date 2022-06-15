@@ -23,9 +23,9 @@ select m.member_id                         as 'Member ID',
        CONVERT(DATE, l.checkout_date, 101) as 'Checkout Date',
        CONVERT(DATE, l.due_date, 101)      as 'Due Date'
 from Borrows.Loans as l,
-     Members.Members as m,
-     Items.Titles as t,
-     Items.Items as i
+     Membership.Members as m,
+     ItemCollection.Titles as t,
+     ItemCollection.Items as i
 where l.member_id = m.member_id
   and l.isbn_ID = i.isbn_ID
   and i.title_id = t.title_id

@@ -15,9 +15,9 @@ select l.isbn_ID as 'ISBN Number',
        /*cover to add to database*/
 --        i.cover as 'Cover'
 
-from Items.Titles as t,
-     Items.Copies as c,
-     Items.Items as i,
+from ItemCollection.Titles as t,
+     ItemCollection.Copies as c,
+     ItemCollection.Items as i,
      Borrows.Loans as l
 
 where l.isbn_ID = i.isbn_ID

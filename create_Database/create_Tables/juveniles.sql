@@ -2,7 +2,7 @@ use AragonMunicipalLibrary
 ;
 go
 
-create table Members.Juveniles
+create table Membership.Juveniles
 (
     juvenile_ID int NOT NULL IDENTITY (1,1),
     member_ID   int NOT NULL,
