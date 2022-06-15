@@ -1,4 +1,4 @@
-use AragonMunicipalLibrary;
+-- use AragonMunicipalLibrary;
 
 -- create a trigger on new insertion of a loan to update the on_loan in table Copies tp add 1
 CREATE TRIGGER [Borrows].onLoanInsert
