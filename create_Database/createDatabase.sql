@@ -4,11 +4,20 @@ use master
 /**
   main database creation
  */
-create database AragonMunicipalLibrary
+
+create database AragonMunicipalLibrary2;
 ;
 go
-use AragonMunicipalLibrary;
+use AragonMunicipalLibrary2;
 go
+drop database AragonMunicipalLibrary2;
+/*Show all database tables in microsoft sql server*/
+
+
+
+select * from sys.tables
+
+
 
 
 -- drop database if exists AragonMunicipalLibrary;

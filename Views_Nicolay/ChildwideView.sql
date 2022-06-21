@@ -1,5 +1,5 @@
 use master;
-use AragonMunicipalLibrary;
+use AragonMunicipalLibrary2;
 
 /*
 Create a view and save it as ChildwideView that queries the member,
