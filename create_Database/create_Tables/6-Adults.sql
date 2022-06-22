@@ -12,6 +12,8 @@ create table Membership.Adults
     photograph   IMAGE       NOT NULL,
     PRIMARY KEY (adult_id)
 )
+;
+go
 
 /*Changed photograph data type to VarBinary */
 ALTER TABLE Membership.Adults ALTER COLUMN photograph VARBINARY(MAX)

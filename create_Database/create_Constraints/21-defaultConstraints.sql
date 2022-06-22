@@ -48,6 +48,7 @@ alter table Membership.Members
     ADD CONSTRAINT df_card_issue_date
     DEFAULT getdate() for card_issue_date
 ;
+go
 
 alter table Membership.Members
     ADD CONSTRAINT df_empty_string

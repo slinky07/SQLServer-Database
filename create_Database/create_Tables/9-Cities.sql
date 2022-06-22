@@ -1,6 +1,6 @@
--- use AragonMunicipalLibrary2
--- ;
--- go
+use AragonMunicipalLibrary
+;
+go
 
 create table Membership.Cities
 (

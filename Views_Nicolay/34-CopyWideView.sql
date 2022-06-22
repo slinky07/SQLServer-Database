@@ -5,8 +5,9 @@
 
 
 -- use master;
--- use AragonMunicipalLibrary
+use AragonMunicipalLibrary
 ;
+go
 
 -- TODO - display every genre and every author for each book. This is a bit of a pain. Many to many relationship for those.
 create view ItemCollection.CopyWideView as

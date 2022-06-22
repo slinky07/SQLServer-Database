@@ -1,5 +1,5 @@
--- use AragonMunicipalLibrary;
--- go
+use AragonMunicipalLibrary;
+go
 
 /*
  Create a mailing list of Library members that includes the members’ full names and complete address information.
@@ -16,6 +16,7 @@ from Membership.Members as m,
 where a.member_id = m.member_id
   and a.address_id = ad.address_id
 ;
+go
 
 /*
  Returns the mailing list of all Library members.

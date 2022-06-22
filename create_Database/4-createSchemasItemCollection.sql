@@ -4,7 +4,7 @@
   Get this error when running from run config, all schemas at once, the last one does not execute
  */
 
---   use AragonMunicipalLibrary;
+use AragonMunicipalLibrary;
 
 create schema ItemCollection authorization dbo
 ;

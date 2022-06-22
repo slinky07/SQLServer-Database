@@ -1,6 +1,6 @@
 -- What percentage of the books was loaned out at least once last year?
 
-use AragonMunicipalLibrary2
+use AragonMunicipalLibrary
 ;
 go
 drop function Borrows.percentLoanedLastYear
@@ -24,4 +24,4 @@ create function Borrows.percentLoanedLastYear()
         return @yearCount / @totalCount;
     end
 
-    select Borrows.percentLoanedLastYear() as test
+    select Borrows.percentLoanedLastYear() as total_percent_per_year
