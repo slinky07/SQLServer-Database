@@ -25,4 +25,3 @@ select *
 from MailingList_View as ml
 ;
 go
-drop view MailingList_View;
