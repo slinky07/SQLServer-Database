@@ -7,3 +7,6 @@ Team Project for Database class
 - for example, Tables are in **`create_database/create_tables`** 
 
 lets do this guys! 
+
+### Instructions 
+use file numbering to know what order to create database! 
