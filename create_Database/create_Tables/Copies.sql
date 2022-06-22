@@ -13,6 +13,11 @@ create table ItemCollection.Copies
 ;
 go
 
+--Hershey: add column if copy is loanable or not, required for task 7 (views)
+ALTER TABLE ItemCollection.Copies ADD loanable char(1) default 'N'
+
+--add check constraint to ensure loanable is either Y or N
+
 -- loanable will be in the VIEWS. see assignment outline at one of the task, 7, 8, 9 or 10 for more info
 -- alter table Items.Copies
 -- drop column loanable

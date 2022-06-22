@@ -2,19 +2,21 @@
   title and item tables. Lists complete information about each copy.
 
   */
+
 use master;
-use AragonMunicipalLibrary
+use AragonMunicipalLibrary2
 ;
 -- TODO - display every genre and every author for each book. This is a bit of a pain. Many to many relationship for those.
-create view CopywideView as
-select i.isbn_ID     as ISBN,
-       t.title       as 'Title',
-       p.publisher   as 'Publisher',
-       i.binding     as 'Binding',
-       i.translation as 'Language',
-       t.synopsis    as 'Description',
-       c.on_loan     as 'Copies on Loan',
-       c.copy_amt    as 'Copies'
+create view ItemCollection.CopyWideView as
+select i.isbn_ID     as 'isbn_ID',
+       t.title       as 'title',
+       p.publisher   as 'publisher',
+       i.binding     as 'binding',
+       i.translation as 'translation',
+       t.synopsis    as 'synopsis',
+       c.on_loan     as 'on_loan',
+       c.copy_amt    as 'copy_amt',
+       c.loanable    as 'loanable' -- Hershey: added
 
 from ItemCollection.Copies as c,
      ItemCollection.Publisher as p,
@@ -26,5 +28,6 @@ where i.title_ID = t.title_ID
             and i.title_ID = t.title_ID
             and i.copy_ID = c.copy_ID
 ;
+go
+select*from ItemCollection.CopyWideView;
 
-select*from CopywideView;
