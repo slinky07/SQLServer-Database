@@ -1,6 +1,6 @@
-use AragonMunicipalLibrary
-;
-go
+-- use AragonMunicipalLibrary
+-- ;
+-- go
 
 -- select MAX(total_loans) as Max_Borrowings
 --   from (

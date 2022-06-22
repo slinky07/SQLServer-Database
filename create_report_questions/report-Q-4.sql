@@ -1,8 +1,8 @@
 -- What percentage of the books was loaned out at least once last year?
-
-use AragonMunicipalLibrary
-;
-go
+--
+-- use AragonMunicipalLibrary
+-- ;
+-- go
 drop function Borrows.percentLoanedLastYear
 
 create function Borrows.percentLoanedLastYear()

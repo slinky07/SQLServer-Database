@@ -1,6 +1,6 @@
-use AragonMunicipalLibrary;
-;
-go
+-- use AragonMunicipalLibrary;
+-- ;
+-- go
 
 -- create a view and store it as OnloanView that queries the loan, title and member tables.
 -- Lists the :

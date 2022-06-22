@@ -1,4 +1,4 @@
-use AragonMunicipalLibrary;
+-- use AragonMunicipalLibrary;
 
 -- populate table Cities
 insert into Membership.Cities (city) VALUES ('Montreal');

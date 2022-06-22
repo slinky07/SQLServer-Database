@@ -1,4 +1,4 @@
-Use AragonMunicipalLibrary;
+-- Use AragonMunicipalLibrary;
 -- create a trigger on DELETE of a loan record to update the on_loan in table Copies to subtract 1
 -- mistake on wrong book insert?
 CREATE TRIGGER [Borrows].onLoanDelete

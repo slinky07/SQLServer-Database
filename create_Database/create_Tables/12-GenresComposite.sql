@@ -1,6 +1,6 @@
-use AragonMunicipalLibrary
-;
-go
+-- use AragonMunicipalLibrary
+-- ;
+-- go
 
 /**
  @table ItemCollection.GenreComposite is a composite key of ItemCollection.Author to implement many to many relationship

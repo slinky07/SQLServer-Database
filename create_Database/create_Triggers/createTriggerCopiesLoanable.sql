@@ -1,4 +1,4 @@
- use AragonMunicipalLibrary
+--  use AragonMunicipalLibrary
 
 /*
  create a trigger that updates ItemCollection.Copies.loanable to true if the item is loanable and false otherwise
