@@ -1,16 +1,17 @@
 -- What percentage of the books was loaned out at least once last year?
 
-use AragonMunicipalLibrary2
-;
-go
+-- use AragonMunicipalLibrary
+-- ;
+-- go
 drop function Borrows.percentLoanedLastYear
 
 create function Borrows.percentLoanedLastYear()
-    returns int
+    returns decimal
     as
     begin
-        declare @yearCount int;
-        declare @totalCount int;
+        declare @yearCount decimal;
+        declare @totalCount decimal
+        declare @result decimal;
 
         set @yearCount = (select count(distinct isbn_ID)
         from Borrows.Loans as l
@@ -19,9 +20,14 @@ create function Borrows.percentLoanedLastYear()
 
         set @totalCount = (select count(distinct isbn_ID) from Borrows.Loans as l)
 
-        if @totalCount = 0
+        if @totalCount = 0.00
             return 0;
-        return @yearCount / @totalCount;
+
+        set @result = (@yearCount / @totalCount * 100)
+        return @result;
+--             return 0
+--         return @totalCount;
+--         return @yearCount;
     end
 
-    select Borrows.percentLoanedLastYear() as test
+    select Borrows.percentLoanedLastYear() as 'percentage /100 of the books was loaned out at least once last year'
