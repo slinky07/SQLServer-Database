@@ -1,13 +1,25 @@
+/**
+Authors:
+  • Francis Sauvé
+  • Tzvi Blackman
+  • Nikolay Bang
+  • François Boulay-Handfield
+
+in the context of the Team project
+for CCCS-330-754 in Spring 2022 semester.
+
+  Main database creation
+
+ 1- check if database exists.
+ 2- if it exists:
+    2.1- print message,
+    2.2 drop database
+    2.3 create it
+ 3- else create it
+ use
+ */
 use master
 ;
-
-/**
-  main database creation
- */
-
-
- -- -------------------------------------------------------
--- check if database exists. if it existsm drop then create it, else create it
 
 if exists (select * from sys.databases where name = 'AragonMunicipalLibrary')
 begin
@@ -21,11 +33,12 @@ begin
 end
 ;
 go
+
 use AragonMunicipalLibrary
+;
 
+---------------------------------OLD STUFF BELOW ------------------------------------------------
 
-
----------------------------------------------------------------------------------
 /*
 create database AragonMunicipalLibrary;
 ;
@@ -36,15 +49,10 @@ go
 */
 
 -- drop database AragonMunicipalLibrary;
+-- drop database if exists AragonMunicipalLibrary;
 
 /*Show all database tables in microsoft sql server*/
 
-
-
 -- select * from sys.tables
 
-
-
-
--- drop database if exists AragonMunicipalLibrary;
 
