@@ -1,5 +1,5 @@
-use master;
--- use AragonMunicipalLibrary2;
+-- use master;
+-- use AragonMunicipalLibrary;
 
 /*
 Create a view and save it as ChildwideView that queries the member,
@@ -9,6 +9,7 @@ adult, and juvenile tables. Lists the name & address for the juveniles.
 -- TODO - this view seems to be broken. red lines everywhere. check my code below for my version. but junvenile data are not correct.
 --  you dont need to show adult name of the address owner. It is asking for name and address of the child. Would only need to not print null records for names.
 -- also some address seem to be null from this view
+
 create view ChildwideView as
 select m.member_ID                                                                                                   as 'Member ID',
        a.adult_ID                                                                                                    as 'Adult ID',
@@ -41,6 +42,6 @@ select m.member_ID                                                              
 go
 */
 
-SELECT * FROM ChildwideView;
+-- SELECT * FROM ChildwideView;
 
 

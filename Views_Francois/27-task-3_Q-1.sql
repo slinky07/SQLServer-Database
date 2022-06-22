@@ -1,4 +1,4 @@
--- use AragonMunicipalLibrary2;
+-- use AragonMunicipalLibrary;
 -- go
 
 /*
@@ -15,13 +15,13 @@ from Membership.Members as m,
 
 where a.member_id = m.member_id
   and a.address_id = ad.address_id
-
+;
 
 /*
  Returns the mailing list of all Library members.
  */
-
-select *
-from MailingList_View as ml
-;
-go
+--
+-- select *
+-- from MailingList_View as ml
+-- ;
+-- go

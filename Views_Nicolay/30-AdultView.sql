@@ -1,7 +1,7 @@
 /*
    Planning to add is guardian or has minor field to know if adult is associated with minor
  */
-use AragonMunicipalLibrary;
+-- use AragonMunicipalLibrary;
 
 create function Membership.check_if_adult_is_guardian(@adult_ID int)
     returns varchar(3)
@@ -47,9 +47,9 @@ create view AdultwideView as
       and ad.city_ID = c.city_ID
 ;
 
-Declare @test int;
+declare @test int;
 set @test = 131;
- Membership.check_if_adult_is_guardian(@test);
+ Membership.check_if_adult_is_guardian (@test);
 
 select*
 from AdultwideView;

@@ -46,7 +46,7 @@ alter table ItemCollection.GenresComposite
     FOREIGN KEY (title_ID) references ItemCollection.Titles(title_ID)
 ;
 
-alter table ItemCollection.GenreComposite
+alter table ItemCollection.GenresComposite
     ADD CONSTRAINT fk_GenresComposite_genre
     FOREIGN KEY (genre_ID) references ItemCollection.Genres(genre_ID)
 ;

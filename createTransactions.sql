@@ -10,7 +10,8 @@ begin catch
     end catch
 ;
 go
-
+-- TODO can we make this one below dynamic in the sens that every insert of loan will try a transaction?
+--  is worth trying if we got time ...
 begin try
     begin transaction;
         insert into Borrows.loans (isbn_ID, member_ID)
