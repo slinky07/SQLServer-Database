@@ -2,6 +2,8 @@ use AragonMunicipalLibrary
 ;
 go
 
+/*When you delete all data and repopulate, it wont work as it does not reset
+  the PK assignment so it will break it, unfortunately need to drop database and rebuild*/
 -- populate table ItemCollection.genres
 insert into ItemCollection.Genres (genre) values ('Fantasy');
 insert into ItemCollection.Genres (genre) values ('Science Fiction');
