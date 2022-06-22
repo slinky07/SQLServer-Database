@@ -29,11 +29,13 @@ select * from sys.tables
 
 if exists (select * from sys.databases where name = 'AragonMunicipalLibrary')
 begin
-  print 'Database exists'
+  print 'Database exists. DROPPING AragonMunicipalLibrary';
+    drop database AragonMunicipalLibrary;
 end
 else
 begin
   create database AragonMunicipalLibrary
 end
+;
 
 */
