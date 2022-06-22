@@ -1,6 +1,6 @@
-use AragonMunicipalLibrary;
-;
-go
+-- use AragonMunicipalLibrary;
+-- ;
+-- go
 -- TODO : photograph should not be of type Imagem that is deprecated and we would get points taken off from tje assignment.
 create table Membership.Adults
 (
@@ -12,6 +12,8 @@ create table Membership.Adults
     photograph   IMAGE       NOT NULL,
     PRIMARY KEY (adult_id)
 )
+;
+go
 
 /*Changed photograph data type to VarBinary */
 ALTER TABLE Membership.Adults ALTER COLUMN photograph VARBINARY(MAX)

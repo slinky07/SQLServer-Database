@@ -1,6 +1,6 @@
-use AragonMunicipalLibrary
-;
-go
+-- use AragonMunicipalLibrary
+-- ;
+-- go
 
 /*When you delete all data and repopulate, it wont work as it does not reset
   the PK assignment so it will break it, unfortunately need to drop database and rebuild*/
@@ -16,8 +16,10 @@ insert into ItemCollection.Genres (genre) values ('Adventure');
 insert into ItemCollection.Genres (genre) values ('Comedy');
 insert into ItemCollection.Genres (genre) values ('War');
 insert into ItemCollection.Genres (genre) values ('Western');
+go
 
 select * from ItemCollection.Genres;
+go
 
 -- populate table ItemCollection.publisher
 insert into ItemCollection.Publisher (publisher) values ('Random House');
@@ -32,7 +34,9 @@ insert into ItemCollection.Publisher (publisher) values ('Harper Business');
 insert into ItemCollection.Publisher (publisher) values ('Harper Paperbacks');
 insert into ItemCollection.Publisher (publisher) values ('Harper Collins');
 
+go
 select * from ItemCollection.Publisher;
+go
 
 -- populate table ItemCollection.author
 insert into ItemCollection.Authors (first_name, last_name) values ('J.K.', 'Rowling');
@@ -46,8 +50,9 @@ insert into ItemCollection.Authors (first_name, last_name) values ('Stephen', 'k
 insert into ItemCollection.Authors (first_name, last_name) values ('Anne', 'Rice');
 insert into ItemCollection.Authors (first_name, last_name) values ('Beatrix', 'Potter');
 insert into ItemCollection.Authors (first_name, last_name) values ('Zane', 'Grey');
-
+go
 select * from ItemCollection.Authors;
+go
 
 -- populate table ItemCollection.copies
 insert into ItemCollection.Copies (copy_amt) VALUES (3);
@@ -72,7 +77,9 @@ insert into ItemCollection.Copies (copy_amt) VALUES (19);
 insert into ItemCollection.Copies (copy_amt) VALUES (20);
 insert into ItemCollection.Copies (copy_amt) VALUES (21);
 
+go
 select * from ItemCollection.Copies;
+go
 
 -- populate table ItemCollection.Title
 insert into ItemCollection.Titles (title, synopsis, publisher_ID) values ('Harry Potter and the Philosopher''s Stone', 'A young wizard, Harry Potter, discovers that he is the only one who can stop the evil Voldemort, who is trying to take over the world.', 1);
@@ -91,8 +98,10 @@ insert into ItemCollection.Titles (title, synopsis, publisher_ID) VALUES ('The D
 insert into ItemCollection.Titles (title, synopsis, publisher_ID) VALUES ('The Fault in Our Stars', 'The Fault in Our Stars is a novel written by John Green. It is the first book in the Green Movement, and is the first book in the Green Movement to be published in hardcover.', 8);
 insert into ItemCollection.Titles (title, synopsis, publisher_ID) VALUES ('The Book Thief', 'The Book Thief is a novel written by Markus Zusak. It is the first book in the Green Movement, and is the first book in the Green Movement to be published in hardcover.', 9);
 insert into ItemCollection.Titles (title, synopsis, publisher_ID) VALUES ('The Catcher in the Rye', 'The Catcher in the Rye is a novel written by J. D. Salinger. It is the first book in the Green Movement, and is the first book in the Green Movement to be published in hardcover.', 10);
+go
 
-select * from ItemCollection.Titles
+select * from ItemCollection.Titles;
+go
 
 -- populate table ItemCollection.AuthorsComposite
 insert into ItemCollection.AuthorsComposite (author_ID, title_ID) values (1, 1);
@@ -111,7 +120,10 @@ insert into ItemCollection.AuthorsComposite (author_ID, title_ID) values (5, 13)
 insert into ItemCollection.AuthorsComposite (author_ID, title_ID) values (6, 14);
 insert into ItemCollection.AuthorsComposite (author_ID, title_ID) values (7, 15);
 insert into ItemCollection.AuthorsComposite (author_ID, title_ID) values (8, 16);
+go
 select * from ItemCollection.AuthorsComposite;
+go
+
 -- populate table ItemCollection.GenresComposite
 insert into ItemCollection.GenresComposite (genre_ID, title_ID) values (1, 1);
 insert into ItemCollection.GenresComposite (genre_ID, title_ID) values (1, 2);
@@ -129,8 +141,10 @@ insert into ItemCollection.GenresComposite (genre_ID, title_ID) values (5, 13);
 insert into ItemCollection.GenresComposite (genre_ID, title_ID) values (6, 14);
 insert into ItemCollection.GenresComposite (genre_ID, title_ID) values (7, 15);
 insert into ItemCollection.GenresComposite (genre_ID, title_ID) values (8, 16);
+go
 
 select * from ItemCollection.GenresComposite;
+go
 
 -- populate table ItemCollection
 insert into ItemCollection.Items (isbn_id, title_ID, copy_ID, binding, translation) VALUES ( '80-902734-1-6', 1, 1, 'Paperback', 'English');
@@ -151,6 +165,7 @@ insert into ItemCollection.Items (isbn_id, title_ID, copy_ID, binding, translati
 insert into ItemCollection.Items (isbn_id, title_ID, copy_ID, binding, translation) VALUES ( '80-902734-3-6', 1, 1, 'Paperback', 'Japanese');
 insert into ItemCollection.Items (isbn_id, title_ID, copy_ID, binding, translation) VALUES ( '80-302734-4-6', 1, 2, 'Paperback', 'Hindi');
 insert into ItemCollection.Items (isbn_id, title_ID, copy_ID, binding, translation) VALUES ( '80-902734-2-6', 1, 3, 'Paperback', 'English');
+go
 
 select * from ItemCollection.Items
 ;

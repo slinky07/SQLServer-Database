@@ -23,4 +23,6 @@ WHERE c.loanable = 'Y'
 go
 
 
-SELECT * FROM Borrows.LoanableView;
+SELECT * FROM Borrows.LoanableView
+;
+go

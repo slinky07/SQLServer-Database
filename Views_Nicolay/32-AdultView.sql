@@ -2,6 +2,11 @@
    Planning to add is guardian or has minor field to know if adult is associated with minor. My AdultView broke since last night.
  */
 
+use AragonMunicipalLibrary
+;
+go
+
+
 create function Membership.check_if_adult_is_guardian(@adult_ID int)
     returns varchar(3)
 as
@@ -20,6 +25,7 @@ begin
 end
 ;
 go
+
 create view Membership.AdultWideView as
 
 select distinct m.member_ID                                                          as 'Member ID',

@@ -22,4 +22,6 @@ WHERE c.loanable = 'N'
 ;
 go
 
-SELECT * FROM Borrows.OnShelfView;
+SELECT * FROM Borrows.OnShelfView
+;
+go

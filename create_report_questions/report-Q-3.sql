@@ -1,5 +1,6 @@
-use AragonMunicipalLibrary;
-go
+-- use AragonMunicipalLibrary
+-- ;
+-- go
 
 -- select MAX(total_loans) as Max_Borrowings
 --   from (
@@ -17,5 +18,7 @@ SELECT MAX(mycount)
 FROM (
 SELECT member_id, COUNT(member_id) mycount
 FROM Borrows.Loans
-GROUP BY member_id) as mim);
+GROUP BY member_id) as mim)
+;
+go
 

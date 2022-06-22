@@ -1,4 +1,4 @@
--- use AragonMunicipalLibrary2
+-- use AragonMunicipalLibrary
 -- ;
 -- go
 
@@ -10,5 +10,4 @@ create table ItemCollection.Authors
     last_name   varchar(50) NOT NULL,
 )
 ;
-
 go

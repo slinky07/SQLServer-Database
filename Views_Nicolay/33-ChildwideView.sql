@@ -1,5 +1,5 @@
 -- use master;
-use AragonMunicipalLibrary;
+-- use AragonMunicipalLibrary;
 
 /*
 Create a view and save it as ChildwideView that queries the member,
@@ -47,12 +47,15 @@ from Membership.Members m,
 where m.member_ID = j.member_ID
           AND j.adult_ID = a.adult_ID
           AND a.address_ID = ad.address_ID
-          AND ad.city_ID = c.city_ID;
+          AND ad.city_ID = c.city_ID
+;
+go
 
 
 
 SELECT * FROM Membership.ChildWideView;
-
-drop view Membership.ChildWideView;
+go
+--
+-- drop view Membership.ChildWideView;
 
 
