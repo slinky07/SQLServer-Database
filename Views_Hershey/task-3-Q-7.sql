@@ -2,7 +2,7 @@
 Create a view and save it as LoanableView that queries CopywideView (3-table join). Lists complete
 information about each copy marked as loanable (loanable = 'Y').
  */
-use AragonMunicipalLibrary2
+use AragonMunicipalLibrary
 ;
 go
 
