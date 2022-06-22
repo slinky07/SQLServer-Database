@@ -1,6 +1,10 @@
 use AragonMunicipalLibrary
 ;
 
+/* TODO: Somehow when we populate running the whole file as script, it seems to execute more than once, data is there twice.
+   TODO: Create constraint for City so that no two cities with the same name can exist. But also that no members with the exact same info
+   can exist (what are the chances that two people with the same name, same birthdays, and address is actually two different person) */
+
 -- populate table Cities
 insert into Membership.Cities (city) VALUES ('Montreal');
 insert into Membership.Cities (city) VALUES ('Saint-Jean-Sur-Richelieu');

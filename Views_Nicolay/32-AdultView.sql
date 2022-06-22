@@ -1,7 +1,7 @@
 /*
    Planning to add is guardian or has minor field to know if adult is associated with minor
  */
--- use AragonMunicipalLibrary;
+use AragonMunicipalLibrary;
 
 create function Membership.check_if_adult_is_guardian(@adult_ID int)
     returns varchar(3)
@@ -57,19 +57,19 @@ drop view AdultwideView;
 go
 
 -- TODO this view is also seeming to be broken
-create view ChildwideView as
-
-    select m.member_ID                                          as 'Member ID',
-           a.adult_ID                                           as 'Adult ID',
-           m.first_name + '' + m.middle_name + '' + m.last_name as 'Minor name',
-           (select m.first_name + '' + m.middle_name + '' + m.last_name
-            from Membership.Adults a,
-                 Membership.Members m
-            where adult_ID = a.adult_ID)                        as 'Adult name',
-           (select Address from AdultwideView where)            as 'Adult address',
-           ad.unit_number                                       as 'Unit Number',
-           ad.postal_code
-;
+-- create view ChildwideView as
+--
+--     select m.member_ID                                          as 'Member ID',
+--            a.adult_ID                                           as 'Adult ID',
+--            m.first_name + '' + m.middle_name + '' + m.last_name as 'Minor name',
+--            (select m.first_name + '' + m.middle_name + '' + m.last_name
+--             from Membership.Adults a,
+--                  Membership.Members m
+--             where adult_ID = a.adult_ID)                        as 'Adult name',
+--            (select Address from AdultwideView where)            as 'Adult address',
+--            ad.unit_number                                       as 'Unit Number',
+--            ad.postal_code
+-- ;
 
 
 select *

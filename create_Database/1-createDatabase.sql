@@ -2,7 +2,7 @@
 Authors:
   • Francis Sauvé
   • Tzvi Blackman
-  • Nikolay Bang
+  • Nicolay Bang
   • François Boulay-Handfield
 
 in the context of the Team project
