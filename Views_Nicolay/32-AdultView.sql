@@ -1,7 +1,6 @@
 /*
    Planning to add is guardian or has minor field to know if adult is associated with minor. My AdultView broke since last night.
  */
-use AragonMunicipalLibrary;
 
 create function Membership.check_if_adult_is_guardian(@adult_ID int)
     returns varchar(3)
@@ -54,7 +53,7 @@ where m.member_ID = a.member_ID
 
 select*
 from Membership.AdultWideView;
-drop view Membership.AdultwideView;
+-- drop view Membership.AdultwideView;
 go
 
 

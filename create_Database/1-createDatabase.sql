@@ -16,10 +16,12 @@ for CCCS-330-754 in Spring 2022 semester.
     2.2 drop database
     2.3 create it
  3- else create it
- use
+
  */
+
 use master
 ;
+
 go
 if exists (select * from sys.databases where name = 'AragonMunicipalLibrary')
 begin
