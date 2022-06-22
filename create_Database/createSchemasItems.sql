@@ -2,7 +2,7 @@
   @schema ItemCollection handles the tables for the Items
  */
 
- use AragonMunicipalLibrary2;
+--  use AragonMunicipalLibrary;
 
 create schema ItemCollection authorization dbo
 ;

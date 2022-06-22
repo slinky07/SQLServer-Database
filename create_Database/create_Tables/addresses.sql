@@ -1,6 +1,6 @@
-use AragonMunicipalLibrary2;
-;
-go
+-- use AragonMunicipalLibrary2;
+-- ;
+-- go
 
 create table Membership.Addresses
 (
@@ -14,5 +14,3 @@ create table Membership.Addresses
 )
 ;
 
-drop table Membership.Addresses;
-go

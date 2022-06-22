@@ -1,6 +1,6 @@
-use AragonMunicipalLibrary2;
-;
-go
+-- use AragonMunicipalLibrary2;
+-- ;
+-- go
 
 
 create table ItemCollection.Genre

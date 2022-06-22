@@ -1,5 +1,5 @@
-use AragonMunicipalLibrary2;
-go
+-- use AragonMunicipalLibrary2;
+-- go
 
 /*
  Create a mailing list of Library members that includes the members’ full names and complete address information.

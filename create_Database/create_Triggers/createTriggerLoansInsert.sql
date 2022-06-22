@@ -16,6 +16,7 @@ AS
     END;
 go
 
+select * from ItemCollection.Copies
 /*
 -- create a trigger on UPDATE of a loan to update the on_loan in table Copies to subtract 1
 -- doeesnt make sens as a loan being se to returned will not be updated furthermore

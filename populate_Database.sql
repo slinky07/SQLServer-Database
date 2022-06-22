@@ -1,7 +1,6 @@
 use AragonMunicipalLibrary
 ;
 go
--- Delete all data from database
 
 -- populate table Library.genre
 insert into ItemCollection.Genre (genre) values ('Fantasy');
@@ -41,7 +40,6 @@ insert into ItemCollection.Authors (first_name, last_name) values ('Stephen', 'k
 insert into ItemCollection.Authors (first_name, last_name) values ('Anne', 'Rice');
 insert into ItemCollection.Authors (first_name, last_name) values ('Beatrix', 'Potter');
 insert into ItemCollection.Authors (first_name, last_name) values ('Zane', 'Grey');
-
 select * from ItemCollection.Authors;
 
 -- populate table ItemCollection.copies
@@ -154,7 +152,6 @@ insert into Membership.Cities (city) VALUES ('Sainte-Foy');
 insert into Membership.Cities (city) VALUES ('Mauricie');
 insert into Membership.Cities (city) VALUES ('L''Assomption');
 insert into Membership.Cities (city) VALUES ('Pointe-Claire');
-delete from Membership.Cities
 select * from Membership.Cities;
 
 --insert into table Membership.addresses
@@ -178,8 +175,8 @@ insert into Membership.Addresses (city_ID, unit_number, civic_number, street, po
 insert into Membership.Addresses (city_ID, civic_number, street, postal_code) VALUES (1,  '1', 'avenue 8', 'H1H1H1');
 insert into Membership.Addresses (city_ID, unit_number, civic_number, street, postal_code) VALUES (1, '1', '1', 'rue principale', 'H1H1H1');
 insert into Membership.Addresses (city_ID, unit_number, civic_number, street, postal_code) VALUES (2, '1', '1', 'rue poulet', 'H1H1H1');
-Delete from Membership.Addresses;
-select * from Membership.Addresses;
+select * from Membership.Addresses
+
 -- populate table Membership.Membership
 insert into Membership.Members (FIRST_NAME, LAST_NAME, DATE_OF_BIRTH, CARD_ISSUE_DATE) VALUES ('John', 'Doe', '1991-01-19', GETDATE());
 insert into Membership.Members (FIRST_NAME, MIDDLE_NAME, LAST_NAME, DATE_OF_BIRTH, CARD_ISSUE_DATE) VALUES ('Jane', 'moi', 'Doe', '1992-01-19', GETDATE());
@@ -202,13 +199,9 @@ insert into Membership.Members (FIRST_NAME, LAST_NAME, DATE_OF_BIRTH, CARD_ISSUE
 insert into Membership.Members (FIRST_NAME, LAST_NAME, DATE_OF_BIRTH, CARD_ISSUE_DATE) VALUES ('John', 'Dooooeeee', '1986-01-19', GETDATE());
 insert into Membership.Members (FIRST_NAME, LAST_NAME, DATE_OF_BIRTH, CARD_ISSUE_DATE) VALUES ('Jane', 'Dooeeee', '1987-05-19', GETDATE());
 insert into Membership.Members (FIRST_NAME, LAST_NAME, DATE_OF_BIRTH, CARD_ISSUE_DATE) VALUES ('John', 'Dooe', '1999-07-19', GETDATE());
-Delete from Membership.Members;
 select*from Membership.Members;
--- Delete from Membership.Members;
---Delete all data from all tables
 
 
--- populate table Membership.Adults
 insert into Membership.Adults (MEMBER_ID, ADDRESS_ID, EMAIL, PHONE_NUMBER, PHOTOGRAPH) VALUES (43, 41, 'AnEmail@gmail.com', '514-876-5309', 'http://www.google.com/');
 insert into Membership.Adults (MEMBER_ID, ADDRESS_ID, EMAIL, PHONE_NUMBER, PHOTOGRAPH) VALUES (44, 42, '1some@gmail.com', '514-876-5302', 'http://www.google.com/');
 insert into Membership.Adults (MEMBER_ID, ADDRESS_ID, EMAIL, PHONE_NUMBER, PHOTOGRAPH) VALUES (45, 43, '2some@gmail.com', '514-876-5303', 'http://www.google.com/');
@@ -232,9 +225,9 @@ insert into Membership.Adults (MEMBER_ID, ADDRESS_ID, EMAIL, PHONE_NUMBER, PHOTO
 
 
 --Delete all data from table Membership.Adults and Membership.Juveniles
-Delete from Membership.Adults;
-Delete from Membership.Juveniles;
-select * from Membership.Adults;
+-- Delete from Membership.Adults;
+-- Delete from Membership.Juveniles;
+-- select * from Membership.Adults;
 
 -- populate table Membership.juveniles
 -- TODO: the junevile table is setting a member both as a juvenile and an adult. This is not correct. we need to fix this.
@@ -271,7 +264,7 @@ insert into Borrows.Loans (isbn_ID, member_ID) VALUES ('80-902734-5-6', 18);
 insert into Borrows.Loans (isbn_ID, member_ID) VALUES ('80-902734-6-6', 19);
 insert into Borrows.Loans (isbn_ID, member_ID) VALUES ('80-902734-7-6', 20);
 select * from Borrows.Loans;
-Delete from Borrows.Loans;
+
 -- populate table Borrows.Reservations
 insert into Borrows.Reservations (isbn_ID, member_ID, log_date) VALUES ('80-902734-1-6', 1, CONVERT(date, GETDATE()));
 insert into Borrows.Reservations (isbn_ID, member_ID) VALUES ('80-902734-1-6', 2);
@@ -293,7 +286,6 @@ insert into Borrows.Reservations (isbn_ID, member_ID) VALUES ('80-902734-1-8', 1
 insert into Borrows.Reservations (isbn_ID, member_ID) VALUES ('80-902734-1-8', 18);
 insert into Borrows.Reservations (isbn_ID, member_ID) VALUES ('80-902734-1-8', 19);
 insert into Borrows.Reservations (isbn_ID, member_ID) VALUES ('80-902734-1-8', 20);
-Delete from Borrows.Reservations;
 select * from Borrows.Reservations;
 
 -- make a total of every copies on_loan

@@ -2,7 +2,7 @@
   @schema: Membership handles the members.
  */
 
- use AragonMunicipalLibrary2;
+--  use AragonMunicipalLibrary;
 create schema Membership authorization dbo
 ;
 go

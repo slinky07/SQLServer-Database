@@ -5,25 +5,25 @@
     <file url="file://$PROJECT_DIR$/create_Database/createSchemaBorrows.sql" dialect="TSQL" />
     <file url="file://$PROJECT_DIR$/create_Database/createSchemaMembership.sql" dialect="AZURE" />
     <file url="file://$PROJECT_DIR$/create_Database/createSchemasItems.sql" dialect="AZURE" />
-    <file url="file://$PROJECT_DIR$/create_Database/create_Constraints/check_constraints.sql" dialect="AZURE" />
-    <file url="file://$PROJECT_DIR$/create_Database/create_Constraints/default_constraints.sql" dialect="AZURE" />
-    <file url="file://$PROJECT_DIR$/create_Database/create_Constraints/foreign_constraints.sql" dialect="AZURE" />
-    <file url="file://$PROJECT_DIR$/create_Database/create_Tables/AuthorComposite.sql" dialect="AZURE" />
-    <file url="file://$PROJECT_DIR$/create_Database/create_Tables/Authors.sql" dialect="AZURE" />
-    <file url="file://$PROJECT_DIR$/create_Database/create_Tables/Copies.sql" dialect="AZURE" />
-    <file url="file://$PROJECT_DIR$/create_Database/create_Tables/Genre.sql" dialect="AZURE" />
-    <file url="file://$PROJECT_DIR$/create_Database/create_Tables/GenreComposite.sql" dialect="AZURE" />
-    <file url="file://$PROJECT_DIR$/create_Database/create_Tables/Items.sql" dialect="AZURE" />
-    <file url="file://$PROJECT_DIR$/create_Database/create_Tables/Publisher.sql" dialect="AZURE" />
-    <file url="file://$PROJECT_DIR$/create_Database/create_Tables/Titles.sql" dialect="AZURE" />
-    <file url="file://$PROJECT_DIR$/create_Database/create_Tables/addresses.sql" dialect="AZURE" />
-    <file url="file://$PROJECT_DIR$/create_Database/create_Tables/adults.sql" dialect="AZURE" />
-    <file url="file://$PROJECT_DIR$/create_Database/create_Tables/cities.sql" dialect="AZURE" />
-    <file url="file://$PROJECT_DIR$/create_Database/create_Tables/juveniles.sql" dialect="AZURE" />
-    <file url="file://$PROJECT_DIR$/create_Database/create_Tables/loans.sql" dialect="AZURE" />
-    <file url="file://$PROJECT_DIR$/create_Database/create_Tables/members.sql" dialect="AZURE" />
-    <file url="file://$PROJECT_DIR$/create_Database/create_Tables/reservations.sql" dialect="AZURE" />
-    <file url="file://$PROJECT_DIR$/create_Database/create_Triggers/createTriggerLoanUpdate.sql" dialect="AZURE" />
-    <file url="file://$PROJECT_DIR$/create_Database/create_Triggers/createTriggerloanDelete.sql" dialect="AZURE" />
+    <file url="file://$PROJECT_DIR$/create_Database/create_Constraints/check_constraints.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/create_Database/create_Constraints/default_constraints.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/create_Database/create_Constraints/foreign_constraints.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/create_Database/create_Tables/AuthorComposite.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/create_Database/create_Tables/Authors.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/create_Database/create_Tables/Copies.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/create_Database/create_Tables/Genre.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/create_Database/create_Tables/GenreComposite.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/create_Database/create_Tables/Items.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/create_Database/create_Tables/Publisher.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/create_Database/create_Tables/Titles.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/create_Database/create_Tables/addresses.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/create_Database/create_Tables/adults.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/create_Database/create_Tables/cities.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/create_Database/create_Tables/juveniles.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/create_Database/create_Tables/loans.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/create_Database/create_Tables/members.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/create_Database/create_Tables/reservations.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/create_Database/create_Triggers/createTriggerLoanUpdate.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/create_Database/create_Triggers/createTriggerloanDelete.sql" dialect="TSQL" />
   </component>
 </project>

@@ -4,18 +4,21 @@ use master
 /**
   main database creation
  */
-
-create database AragonMunicipalLibrary2;
+--
+create database AragonMunicipalLibrary;
 ;
 go
-use AragonMunicipalLibrary2;
+
+use AragonMunicipalLibrary;
 go
-drop database AragonMunicipalLibrary2;
+
+-- drop database AragonMunicipalLibrary;
+
 /*Show all database tables in microsoft sql server*/
 
 
 
-select * from sys.tables
+-- select * from sys.tables
 
 
 
@@ -25,15 +28,16 @@ select * from sys.tables
 -- -------------------------------------------------------
 -- check if database exists else create it
 
-/*
 
-if exists (select * from sys.databases where name = 'AragonMunicipalLibrary')
-begin
-  print 'Database exists'
-end
-else
-begin
-  create database AragonMunicipalLibrary
-end
 
-*/
+-- if exists (select * from sys.databases where name = 'AragonMunicipalLibrary')
+-- begin
+--   print 'Database exists'
+--     drop database AragonMunicipalLibrary;
+-- end
+-- else
+-- begin
+--   create database AragonMunicipalLibrary
+-- end
+--
+-- use AragonMunicipalLibrary
