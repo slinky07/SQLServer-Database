@@ -1,6 +1,7 @@
 use AragonMunicipalLibrary
 ;
 
+
 -- populate table Membership.Membership
 insert into Membership.Members (FIRST_NAME, LAST_NAME, DATE_OF_BIRTH) VALUES ('John', 'Doe', '1991-01-19');
 insert into Membership.Members (FIRST_NAME, MIDDLE_NAME, LAST_NAME, DATE_OF_BIRTH) VALUES ('Jane', 'moi', 'Doe', '1992-01-19');
@@ -16,13 +17,13 @@ insert into Membership.Members (FIRST_NAME, MIDDLE_NAME, LAST_NAME, DATE_OF_BIRT
 insert into Membership.Members (FIRST_NAME, MIDDLE_NAME, LAST_NAME, DATE_OF_BIRTH) VALUES ('Jane', 'aloa', 'aloa', '1971-01-19');
 insert into Membership.Members (FIRST_NAME, MIDDLE_NAME, LAST_NAME, DATE_OF_BIRTH) VALUES ('John', 'japou', 'japou', '1981-01-19');
 insert into Membership.Members (FIRST_NAME, MIDDLE_NAME, LAST_NAME, DATE_OF_BIRTH) VALUES ('Jane', 'alias', 'Eod', '1991-02-19');
-insert into Membership.Members (FIRST_NAME, LAST_NAME, DATE_OF_BIRTH) VALUES ('John', 'Doeee', '1982-01-19');
-insert into Membership.Members (FIRST_NAME, LAST_NAME, DATE_OF_BIRTH) VALUES ('Jane', 'Doeeeee', '1983-01-19');
-insert into Membership.Members (FIRST_NAME, LAST_NAME, DATE_OF_BIRTH) VALUES ('John', 'Doeeeeee', '1984-01-19');
-insert into Membership.Members (FIRST_NAME, LAST_NAME, DATE_OF_BIRTH) VALUES ('Jane', 'Dooeeeeee', '1985-01-19');
-insert into Membership.Members (FIRST_NAME, LAST_NAME, DATE_OF_BIRTH) VALUES ('John', 'Dooooeeee', '1986-01-19');
-insert into Membership.Members (FIRST_NAME, LAST_NAME, DATE_OF_BIRTH) VALUES ('Jane', 'Dooeeee', '1987-05-19');
-insert into Membership.Members (FIRST_NAME, LAST_NAME, DATE_OF_BIRTH) VALUES ('John', 'Dooe', '1999-07-19');
+insert into Membership.Members (FIRST_NAME, LAST_NAME, DATE_OF_BIRTH) VALUES ('JayJay', 'Goulou', '1982-01-19');
+insert into Membership.Members (FIRST_NAME, LAST_NAME, DATE_OF_BIRTH) VALUES ('Mary', 'Jane', '1983-01-19');
+insert into Membership.Members (FIRST_NAME,middle_name ,LAST_NAME, DATE_OF_BIRTH) VALUES ('Lucy', 'InThe', 'Sky', '1984-01-19');
+insert into Membership.Members (FIRST_NAME, LAST_NAME, DATE_OF_BIRTH) VALUES ('Sweet', 'Caaaarrroooollliiineee', '1985-01-19');
+insert into Membership.Members (FIRST_NAME, LAST_NAME, DATE_OF_BIRTH) VALUES ('Purple', 'Haze', '1986-01-19');
+insert into Membership.Members (FIRST_NAME, LAST_NAME, DATE_OF_BIRTH) VALUES ('Jacques', 'Rousseau', '1987-05-19');
+insert into Membership.Members (FIRST_NAME, LAST_NAME, DATE_OF_BIRTH) VALUES ('John', 'Deer', '1999-07-19');
 select*from Membership.Members;
 
 -- execute file TeamProject/create_Database/create_procedures/createInsertAdultsProcedure.sql first

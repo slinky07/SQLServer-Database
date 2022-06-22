@@ -1,5 +1,5 @@
 /*
-   Planning to add is guardian or has minor field to know if adult is associated with minor
+   Planning to add is guardian or has minor field to know if adult is associated with minor. My AdultView broke since last night.
  */
 use AragonMunicipalLibrary;
 
@@ -20,9 +20,9 @@ if (select count ( j.adult_ID)
         end
 ;
 go
-create view AdultwideView as
+create view Membership.AdultWideView as
 
-    select m.member_ID                                                          as 'Member ID',
+    select distinct m.member_ID                                                          as 'Member ID',
            a.adult_ID                                                           as 'Adult ID',
            m.first_name + '' + m.middle_name + '' + m.last_name                 as 'Name',
            a.photograph                                                         as 'Photo',
@@ -47,16 +47,15 @@ create view AdultwideView as
       and ad.city_ID = c.city_ID
 ;
 
-declare @test int;
-set @test = 131;
- Membership.check_if_adult_is_guardian (@test);
+-- declare @test int;
+-- set @test = 131;
+--  Membership.check_if_adult_is_guardian (@test);
 
 select*
-from AdultwideView;
-drop view AdultwideView;
+from Membership.AdultWideView;
+drop view Membership.AdultwideView;
 go
 
--- TODO this view is also seeming to be broken
 -- create view ChildwideView as
 --
 --     select m.member_ID                                          as 'Member ID',

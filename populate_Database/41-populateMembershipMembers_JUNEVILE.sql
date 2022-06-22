@@ -2,6 +2,7 @@ USE AragonMunicipalLibrary;
 go
 -- populate table Membership.Members for juvenile members.
 -- THESE SHOULD HAVE PRIORITY KEY 22 to 42.
+/*These are Juvenile Members */
 insert into Membership.Members (first_name, middle_name, last_name, date_of_birth) values ('Boolay', 'Mio', 'Lion', '2012-01-01')
 insert into Membership.Members (first_name, last_name, date_of_birth) values ('Mia', 'Pinata', '2012-01-01')
 insert into Membership.Members (first_name, last_name, date_of_birth) values ('Mon', 'Champ', '2012-01-01')
@@ -23,6 +24,7 @@ insert into Membership.Members (first_name, last_name, date_of_birth) values ('S
 insert into Membership.Members (first_name, last_name, date_of_birth) values ('Got', 'To', '2012-01-01')
 insert into Membership.Members (first_name, last_name, date_of_birth) values ('Finish', 'This', '2012-01-01')
 insert into Membership.Members (first_name, last_name, date_of_birth) values ('Table', 'There you go', '2015-01-01')
+/* ROFL, go to bed francis lol */
 go
 SELECT * FROM Membership.Members
 ;
