@@ -51,8 +51,7 @@ where m.member_ID = a.member_ID
 -- set @test = 131;
 --  Membership.check_if_adult_is_guardian (@test);
 
-select*
-from Membership.AdultWideView;
+
 -- drop view Membership.AdultwideView;
 go
 
