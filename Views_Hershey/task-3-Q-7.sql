@@ -6,7 +6,7 @@ use AragonMunicipalLibrary
 ;
 go
 
-create view ItemCollection.LoanableView as
+create view Borrows.LoanableView as
 select c.isbn_ID,
        c.Title,
        c.publisher,
@@ -22,4 +22,5 @@ WHERE c.loanable = 'Y'
 ;
 go
 
-SELECT * FROM ItemCollection.LoanableView;
+
+SELECT * FROM Borrows.LoanableView;

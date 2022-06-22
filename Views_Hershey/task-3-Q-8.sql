@@ -6,7 +6,7 @@ use AragonMunicipalLibrary
 go
 
 
-create view ItemCollection.OnShelfView as
+create view Borrows.OnShelfView as
 select c.isbn_ID,
        c.Title,
        c.publisher,
@@ -22,4 +22,4 @@ WHERE c.loanable = 'N'
 ;
 go
 
-SELECT * FROM ItemCollection.OnShelfView;
+SELECT * FROM Borrows.OnShelfView;
