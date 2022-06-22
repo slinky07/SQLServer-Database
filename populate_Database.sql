@@ -1,33 +1,34 @@
 use AragonMunicipalLibrary
 ;
 go
+-- Delete all data from database
 
 -- populate table Library.genre
-insert into ItemCollection.genre (genre) values ('Fantasy');
-insert into ItemCollection.genre (genre) values ('Science Fiction');
-insert into ItemCollection.genre (genre) values ('Mystery');
-insert into ItemCollection.genre (genre) values ('Romance');
-insert into ItemCollection.genre (genre) values ('Thriller');
-insert into ItemCollection.genre (genre) values ('Drama');
-insert into ItemCollection.genre (genre) values ('Action');
-insert into ItemCollection.genre (genre) values ('Adventure');
-insert into ItemCollection.genre (genre) values ('Comedy');
-insert into ItemCollection.genre (genre) values ('War');
-insert into ItemCollection.genre (genre) values ('Western');
+insert into ItemCollection.Genre (genre) values ('Fantasy');
+insert into ItemCollection.Genre (genre) values ('Science Fiction');
+insert into ItemCollection.Genre (genre) values ('Mystery');
+insert into ItemCollection.Genre (genre) values ('Romance');
+insert into ItemCollection.Genre (genre) values ('Thriller');
+insert into ItemCollection.Genre (genre) values ('Drama');
+insert into ItemCollection.Genre (genre) values ('Action');
+insert into ItemCollection.Genre (genre) values ('Adventure');
+insert into ItemCollection.Genre (genre) values ('Comedy');
+insert into ItemCollection.Genre (genre) values ('War');
+insert into ItemCollection.Genre (genre) values ('Western');
 
 -- populate table Library.publisher
-insert into ItemCollection.publisher (publisher) values ('Random House');
-insert into ItemCollection.publisher (publisher) values ('Harper Collins');
-insert into ItemCollection.publisher (publisher) values ('Penguin Books');
-insert into ItemCollection.publisher (publisher) values ('Simon & Schuster');
-insert into ItemCollection.publisher (publisher) values ('Bantam Books');
-insert into ItemCollection.publisher (publisher) values ('Doubleday');
-insert into ItemCollection.publisher (publisher) values ('Vintage Books');
-insert into ItemCollection.publisher (publisher) values ('Scholastic');
-insert into ItemCollection.publisher (publisher) values ('Harper Business');
-insert into ItemCollection.publisher (publisher) values ('Harper Paperbacks');
-insert into ItemCollection.publisher (publisher) values ('Harper Collins');
-
+insert into ItemCollection.Publisher (publisher) values ('Random House');
+insert into ItemCollection.Publisher (publisher) values ('Harper Collins');
+insert into ItemCollection.Publisher (publisher) values ('Penguin Books');
+insert into ItemCollection.Publisher (publisher) values ('Simon & Schuster');
+insert into ItemCollection.Publisher (publisher) values ('Bantam Books');
+insert into ItemCollection.Publisher (publisher) values ('Doubleday');
+insert into ItemCollection.Publisher (publisher) values ('Vintage Books');
+insert into ItemCollection.Publisher (publisher) values ('Scholastic');
+insert into ItemCollection.Publisher (publisher) values ('Harper Business');
+insert into ItemCollection.Publisher (publisher) values ('Harper Paperbacks');
+insert into ItemCollection.Publisher (publisher) values ('Harper Collins');
+select * from ItemCollection.Publisher;
 -- populate table Library.author
 insert into ItemCollection.Authors (first_name, last_name) values ('J.K.', 'Rowling');
 insert into ItemCollection.Authors (first_name, last_name) values ('J.R.R.', 'Tolkien');
@@ -41,28 +42,30 @@ insert into ItemCollection.Authors (first_name, last_name) values ('Anne', 'Rice
 insert into ItemCollection.Authors (first_name, last_name) values ('Beatrix', 'Potter');
 insert into ItemCollection.Authors (first_name, last_name) values ('Zane', 'Grey');
 
+select * from ItemCollection.Authors;
+
 -- populate table ItemCollection.copies
-insert into ItemCollection.copies (copy_amt) VALUES (3);
-insert into ItemCollection.copies (copy_amt) VALUES (2);
-insert into ItemCollection.copies (copy_amt) VALUES (10);
-insert into ItemCollection.copies (copy_amt) VALUES (5);
-insert into ItemCollection.copies (copy_amt) VALUES (12);
-insert into ItemCollection.copies (copy_amt) VALUES (13);
-insert into ItemCollection.copies (copy_amt) VALUES (14);
-insert into ItemCollection.copies (copy_amt) VALUES (15);
-insert into ItemCollection.copies (copy_amt) VALUES (16);
-insert into ItemCollection.copies (copy_amt) VALUES (17);
-insert into ItemCollection.copies (copy_amt) VALUES (67);
-insert into ItemCollection.copies (copy_amt) VALUES (8);
-insert into ItemCollection.copies (copy_amt) VALUES (59);
-insert into ItemCollection.copies (copy_amt) VALUES (4);
-insert into ItemCollection.copies (copy_amt) VALUES (46);
-insert into ItemCollection.copies (copy_amt) VALUES (11);
-insert into ItemCollection.copies (copy_amt) VALUES (31);
-insert into ItemCollection.copies (copy_amt) VALUES (18);
-insert into ItemCollection.copies (copy_amt) VALUES (19);
-insert into ItemCollection.copies (copy_amt) VALUES (20);
-insert into ItemCollection.copies (copy_amt) VALUES (21);
+insert into ItemCollection.Copies (copy_amt) VALUES (3);
+insert into ItemCollection.Copies (copy_amt) VALUES (2);
+insert into ItemCollection.Copies (copy_amt) VALUES (10);
+insert into ItemCollection.Copies (copy_amt) VALUES (5);
+insert into ItemCollection.Copies (copy_amt) VALUES (12);
+insert into ItemCollection.Copies (copy_amt) VALUES (13);
+insert into ItemCollection.Copies (copy_amt) VALUES (14);
+insert into ItemCollection.Copies (copy_amt) VALUES (15);
+insert into ItemCollection.Copies (copy_amt) VALUES (16);
+insert into ItemCollection.Copies (copy_amt) VALUES (17);
+insert into ItemCollection.Copies (copy_amt) VALUES (67);
+insert into ItemCollection.Copies (copy_amt) VALUES (8);
+insert into ItemCollection.Copies (copy_amt) VALUES (59);
+insert into ItemCollection.Copies (copy_amt) VALUES (4);
+insert into ItemCollection.Copies (copy_amt) VALUES (46);
+insert into ItemCollection.Copies (copy_amt) VALUES (11);
+insert into ItemCollection.Copies (copy_amt) VALUES (31);
+insert into ItemCollection.Copies (copy_amt) VALUES (18);
+insert into ItemCollection.Copies (copy_amt) VALUES (19);
+insert into ItemCollection.Copies (copy_amt) VALUES (20);
+insert into ItemCollection.Copies (copy_amt) VALUES (21);
 
 -- populate table ItemCollection.Title
 insert into ItemCollection.Titles (title, synopsis, publisher_ID) values ('Harry Potter and the Philosopher''s Stone', 'A young wizard, Harry Potter, discovers that he is the only one who can stop the evil Voldemort, who is trying to take over the world.', 1);
@@ -73,15 +76,15 @@ insert into ItemCollection.Titles (title, synopsis, publisher_ID) values ('Harry
 insert into ItemCollection.Titles (title, synopsis, publisher_ID) values ('Harry Potter and the Half-Blood Prince', 'Harry Potter and the Half-Blood Prince is the sixth book in the Harry Potter series. It follows Harry Potter, who has escaped from theprisoner of Azkaban and has worked his way to find the one who has stolen a magical book that allows him to fly. He then must fight the wizard who has been trying to take over the world.', 1);
 insert into ItemCollection.Titles (title, synopsis, publisher_ID) values ('Harry Potter and the Deathly Hallows', 'Harry Potter and the Deathly Hallows is the seventh book in the Harry Potter series. It follows Harry Potter, who has escaped from theprisoner of Azkaban and has worked his way to find the one who has stolen a magical book that allows him to fly. He then must fight the wizard who has been trying to take over the world.', 1);
 insert into ItemCollection.Titles (title, synopsis, publisher_ID) values ('The Hobbit', 'The Hobbit is the first of three volumes in the epic adventure novel The Lord of the Rings. It is the first volume in the New Zealand edition of the classic English novel, and the first in the New Zealand edition of the classic American novel, The Fellowship of the Ring.', 2);
-insert into ItemCollection.titles (title, synopsis, publisher_ID) VALUES ('To kill a Mockingbird', 'To kill a mockingbird is a novel written by Harper Lee published in 1960. It is considered one of the best-selling novels of all time and is considered a classic of American literature.', 3);
-insert into ItemCollection.titles (title, synopsis, publisher_ID) VALUES ('The Great Gatsby', 'The Great Gatsby is a 1925 novel written by F. Scott Fitzgerald that follows the story of a millionaire Jay Gatsby and his love for the beautiful Daisy Buchanan, of whom he has never met.', 4);
-insert into ItemCollection.titles (title, synopsis, publisher_ID) VALUES ('The Lord of the Rings', 'The Lord of the Rings is a fantasy novel written by English author J. R. R. Tolkien. The story began as a sequel to Tolkiens 1937 fantasy novel The Hobbit, but eventually developed into a much larger work.', 5);
-insert into ItemCollection.titles (title, synopsis, publisher_ID) VALUES ('The Hunger Games', 'The Hunger Games is a 2009 science fiction novel written by Suzanne Collins. It is a dystopian novel set in the year of the virtual reality game The Hunger Games, which was created by the American company The Hunger Games.', 6);
-insert into ItemCollection.titles (title, synopsis, publisher_ID) VALUES ('The Day', 'The Day is a novel written by American author John Green. It is the first book in the Green Movement, and is the first book in the Green Movement to be published in hardcover.', 7);
-insert into ItemCollection.titles (title, synopsis, publisher_ID) VALUES ('The Fault in Our Stars', 'The Fault in Our Stars is a novel written by John Green. It is the first book in the Green Movement, and is the first book in the Green Movement to be published in hardcover.', 8);
-insert into ItemCollection.titles (title, synopsis, publisher_ID) VALUES ('The Book Thief', 'The Book Thief is a novel written by Markus Zusak. It is the first book in the Green Movement, and is the first book in the Green Movement to be published in hardcover.', 9);
-insert into ItemCollection.titles (title, synopsis, publisher_ID) VALUES ('The Catcher in the Rye', 'The Catcher in the Rye is a novel written by J. D. Salinger. It is the first book in the Green Movement, and is the first book in the Green Movement to be published in hardcover.', 10);
-
+insert into ItemCollection.Titles (title, synopsis, publisher_ID) VALUES ('To kill a Mockingbird', 'To kill a mockingbird is a novel written by Harper Lee published in 1960. It is considered one of the best-selling novels of all time and is considered a classic of American literature.', 3);
+insert into ItemCollection.Titles (title, synopsis, publisher_ID) VALUES ('The Great Gatsby', 'The Great Gatsby is a 1925 novel written by F. Scott Fitzgerald that follows the story of a millionaire Jay Gatsby and his love for the beautiful Daisy Buchanan, of whom he has never met.', 4);
+insert into ItemCollection.Titles (title, synopsis, publisher_ID) VALUES ('The Lord of the Rings', 'The Lord of the Rings is a fantasy novel written by English author J. R. R. Tolkien. The story began as a sequel to Tolkiens 1937 fantasy novel The Hobbit, but eventually developed into a much larger work.', 5);
+insert into ItemCollection.Titles (title, synopsis, publisher_ID) VALUES ('The Hunger Games', 'The Hunger Games is a 2009 science fiction novel written by Suzanne Collins. It is a dystopian novel set in the year of the virtual reality game The Hunger Games, which was created by the American company The Hunger Games.', 6);
+insert into ItemCollection.Titles (title, synopsis, publisher_ID) VALUES ('The Day', 'The Day is a novel written by American author John Green. It is the first book in the Green Movement, and is the first book in the Green Movement to be published in hardcover.', 7);
+insert into ItemCollection.Titles (title, synopsis, publisher_ID) VALUES ('The Fault in Our Stars', 'The Fault in Our Stars is a novel written by John Green. It is the first book in the Green Movement, and is the first book in the Green Movement to be published in hardcover.', 8);
+insert into ItemCollection.Titles (title, synopsis, publisher_ID) VALUES ('The Book Thief', 'The Book Thief is a novel written by Markus Zusak. It is the first book in the Green Movement, and is the first book in the Green Movement to be published in hardcover.', 9);
+insert into ItemCollection.Titles (title, synopsis, publisher_ID) VALUES ('The Catcher in the Rye', 'The Catcher in the Rye is a novel written by J. D. Salinger. It is the first book in the Green Movement, and is the first book in the Green Movement to be published in hardcover.', 10);
+select * from ItemCollection.Titles
 -- populate table AuthorComposite
 insert into ItemCollection.AuthorComposite (author_ID, title_ID) values (1, 1);
 insert into ItemCollection.AuthorComposite (author_ID, title_ID) values (1, 2);
@@ -99,7 +102,7 @@ insert into ItemCollection.AuthorComposite (author_ID, title_ID) values (5, 13);
 insert into ItemCollection.AuthorComposite (author_ID, title_ID) values (6, 14);
 insert into ItemCollection.AuthorComposite (author_ID, title_ID) values (7, 15);
 insert into ItemCollection.AuthorComposite (author_ID, title_ID) values (8, 16);
-
+select * from ItemCollection.AuthorComposite;
 -- populate table GenreComposite
 insert into ItemCollection.GenreComposite (genre_ID, title_ID) values (1, 1);
 insert into ItemCollection.GenreComposite (genre_ID, title_ID) values (1, 2);
@@ -117,6 +120,7 @@ insert into ItemCollection.GenreComposite (genre_ID, title_ID) values (5, 13);
 insert into ItemCollection.GenreComposite (genre_ID, title_ID) values (6, 14);
 insert into ItemCollection.GenreComposite (genre_ID, title_ID) values (7, 15);
 insert into ItemCollection.GenreComposite (genre_ID, title_ID) values (8, 16);
+select * from ItemCollection.GenreComposite;
 
 -- populate table ItemCollection
 insert into ItemCollection.Items (isbn_id, title_ID, copy_ID, binding, translation) VALUES ( '80-902734-1-6', 1, 1, 'Paperback', 'English');
@@ -137,7 +141,7 @@ insert into ItemCollection.Items (isbn_id, title_ID, copy_ID, binding, translati
 insert into ItemCollection.Items (isbn_id, title_ID, copy_ID, binding, translation) VALUES ( '80-902734-3-6', 1, 1, 'Paperback', 'Japanese');
 insert into ItemCollection.Items (isbn_id, title_ID, copy_ID, binding, translation) VALUES ( '80-302734-4-6', 1, 2, 'Paperback', 'Hindi');
 insert into ItemCollection.Items (isbn_id, title_ID, copy_ID, binding, translation) VALUES ( '80-902734-2-6', 1, 3, 'Paperback', 'English');
-
+select * from ItemCollection.Items;
 -- populate table Cities
 insert into Membership.Cities (city) VALUES ('Montreal');
 insert into Membership.Cities (city) VALUES ('Saint-Jean-Sur-Richelieu');
@@ -150,7 +154,7 @@ insert into Membership.Cities (city) VALUES ('Sainte-Foy');
 insert into Membership.Cities (city) VALUES ('Mauricie');
 insert into Membership.Cities (city) VALUES ('L''Assomption');
 insert into Membership.Cities (city) VALUES ('Pointe-Claire');
-
+delete from Membership.Cities
 select * from Membership.Cities;
 
 --insert into table Membership.addresses
@@ -174,7 +178,7 @@ insert into Membership.Addresses (city_ID, unit_number, civic_number, street, po
 insert into Membership.Addresses (city_ID, civic_number, street, postal_code) VALUES (1,  '1', 'avenue 8', 'H1H1H1');
 insert into Membership.Addresses (city_ID, unit_number, civic_number, street, postal_code) VALUES (1, '1', '1', 'rue principale', 'H1H1H1');
 insert into Membership.Addresses (city_ID, unit_number, civic_number, street, postal_code) VALUES (2, '1', '1', 'rue poulet', 'H1H1H1');
-
+Delete from Membership.Addresses;
 select * from Membership.Addresses;
 -- populate table Membership.Membership
 insert into Membership.Members (FIRST_NAME, LAST_NAME, DATE_OF_BIRTH, CARD_ISSUE_DATE) VALUES ('John', 'Doe', '1991-01-19', GETDATE());
@@ -198,81 +202,76 @@ insert into Membership.Members (FIRST_NAME, LAST_NAME, DATE_OF_BIRTH, CARD_ISSUE
 insert into Membership.Members (FIRST_NAME, LAST_NAME, DATE_OF_BIRTH, CARD_ISSUE_DATE) VALUES ('John', 'Dooooeeee', '1986-01-19', GETDATE());
 insert into Membership.Members (FIRST_NAME, LAST_NAME, DATE_OF_BIRTH, CARD_ISSUE_DATE) VALUES ('Jane', 'Dooeeee', '1987-05-19', GETDATE());
 insert into Membership.Members (FIRST_NAME, LAST_NAME, DATE_OF_BIRTH, CARD_ISSUE_DATE) VALUES ('John', 'Dooe', '1999-07-19', GETDATE());
-
+Delete from Membership.Members;
 select*from Membership.Members;
 -- Delete from Membership.Members;
+--Delete all data from all tables
+
 
 -- populate table Membership.Adults
-insert into Membership.Adults (MEMBER_ID, ADDRESS_ID, EMAIL, PHONE_NUMBER, PHOTOGRAPH) VALUES (1, 1, 'AnEmail@gmail.com', '514-876-5309', 'http://www.google.com/');
-insert into Membership.Adults (MEMBER_ID, ADDRESS_ID, EMAIL, PHONE_NUMBER, PHOTOGRAPH) VALUES (2, 2, '1some@gmail.com', '514-876-5302', 'http://www.google.com/');
-insert into Membership.Adults (MEMBER_ID, ADDRESS_ID, EMAIL, PHONE_NUMBER, PHOTOGRAPH) VALUES (3, 3, '2some@gmail.com', '514-876-5303', 'http://www.google.com/');
-insert into Membership.Adults (MEMBER_ID, ADDRESS_ID, EMAIL, PHONE_NUMBER, PHOTOGRAPH) VALUES (4, 4, '3some@gmail.com', '514-876-5304', 'http://www.google.com/');
-insert into Membership.Adults (MEMBER_ID, ADDRESS_ID, EMAIL, PHONE_NUMBER, PHOTOGRAPH) VALUES (5, 5, '4some@gmail.com', '514-876-5305', 'http://www.google.com/');
-insert into Membership.Adults (MEMBER_ID, ADDRESS_ID, EMAIL, PHONE_NUMBER, PHOTOGRAPH) VALUES (6, 6, '5some@gmail.com', '514-876-5306', 'http://www.google.com/');
-insert into Membership.Adults (MEMBER_ID, ADDRESS_ID, EMAIL, PHONE_NUMBER, PHOTOGRAPH) VALUES (7, 7, '6some@gmail.com', '514-876-5307', 'http://www.google.com/');
-insert into Membership.Adults (MEMBER_ID, ADDRESS_ID, EMAIL, PHONE_NUMBER, PHOTOGRAPH) VALUES (8, 8, '7some@gmail.com', '514-876-5308', 'http://www.google.com/');
-insert into Membership.Adults (MEMBER_ID, ADDRESS_ID, EMAIL, PHONE_NUMBER, PHOTOGRAPH) VALUES (9, 9, '8some@gmail.com', '514-876-5409', 'http://www.google.com/');
-insert into Membership.Adults (MEMBER_ID, ADDRESS_ID, EMAIL, PHONE_NUMBER, PHOTOGRAPH) VALUES (10, 10, '9some@gmail.com', '514-876-5402', 'http://www.google.com/');
-insert into Membership.Adults (MEMBER_ID, ADDRESS_ID, EMAIL, PHONE_NUMBER, PHOTOGRAPH) VALUES (11, 11, 'some1@gmail.com', '514-876-5403', 'http://www.google.com/');
-insert into Membership.Adults (MEMBER_ID, ADDRESS_ID, EMAIL, PHONE_NUMBER, PHOTOGRAPH) VALUES (12, 12, 'some2@gmail.com', '514-876-5404', 'http://www.google.com/');
-insert into Membership.Adults (MEMBER_ID, ADDRESS_ID, EMAIL, PHONE_NUMBER, PHOTOGRAPH) VALUES (13, 13, 'some3@gmail.com', '514-876-5405', 'http://www.google.com/');
-insert into Membership.Adults (MEMBER_ID, ADDRESS_ID, EMAIL, PHONE_NUMBER, PHOTOGRAPH) VALUES (14, 14, 'some4@gmail.com', '514-876-5406', 'http://www.google.com/');
-insert into Membership.Adults (MEMBER_ID, ADDRESS_ID, EMAIL, PHONE_NUMBER, PHOTOGRAPH) VALUES (15, 15, 'some5@gmail.com', '514-876-5407', 'http://www.google.com/');
-insert into Membership.Adults (MEMBER_ID, ADDRESS_ID, EMAIL, PHONE_NUMBER, PHOTOGRAPH) VALUES (16, 16, 'some6@gmail.com', '514-876-5408', 'http://www.google.com/');
-insert into Membership.Adults (MEMBER_ID, ADDRESS_ID, EMAIL, PHONE_NUMBER, PHOTOGRAPH) VALUES (17, 17, 'some7@gmail.com', '514-876-5409', 'http://www.google.com/');
-insert into Membership.Adults (MEMBER_ID, ADDRESS_ID, EMAIL, PHONE_NUMBER, PHOTOGRAPH) VALUES (18, 18, 'some8@gmail.com', '514-876-5402', 'http://www.google.com/');
-insert into Membership.Adults (MEMBER_ID, ADDRESS_ID, EMAIL, PHONE_NUMBER, PHOTOGRAPH) VALUES (19, 19, 'some9@gmail.com', '514-876-5403', 'http://www.google.com/');
-insert into Membership.Adults (MEMBER_ID, ADDRESS_ID, EMAIL, PHONE_NUMBER, PHOTOGRAPH) VALUES (20, 20, 'some0@gmail.com', '514-876-5404', 'http://www.google.com/');
+insert into Membership.Adults (MEMBER_ID, ADDRESS_ID, EMAIL, PHONE_NUMBER, PHOTOGRAPH) VALUES (43, 41, 'AnEmail@gmail.com', '514-876-5309', 'http://www.google.com/');
+insert into Membership.Adults (MEMBER_ID, ADDRESS_ID, EMAIL, PHONE_NUMBER, PHOTOGRAPH) VALUES (44, 42, '1some@gmail.com', '514-876-5302', 'http://www.google.com/');
+insert into Membership.Adults (MEMBER_ID, ADDRESS_ID, EMAIL, PHONE_NUMBER, PHOTOGRAPH) VALUES (45, 43, '2some@gmail.com', '514-876-5303', 'http://www.google.com/');
+insert into Membership.Adults (MEMBER_ID, ADDRESS_ID, EMAIL, PHONE_NUMBER, PHOTOGRAPH) VALUES (46, 44, '3some@gmail.com', '514-876-5304', 'http://www.google.com/');
+insert into Membership.Adults (MEMBER_ID, ADDRESS_ID, EMAIL, PHONE_NUMBER, PHOTOGRAPH) VALUES (47, 45, '4some@gmail.com', '514-876-5305', 'http://www.google.com/');
+insert into Membership.Adults (MEMBER_ID, ADDRESS_ID, EMAIL, PHONE_NUMBER, PHOTOGRAPH) VALUES (48, 46, '5some@gmail.com', '514-876-5306', 'http://www.google.com/');
+insert into Membership.Adults (MEMBER_ID, ADDRESS_ID, EMAIL, PHONE_NUMBER, PHOTOGRAPH) VALUES (49, 47, '6some@gmail.com', '514-876-5307', 'http://www.google.com/');
+insert into Membership.Adults (MEMBER_ID, ADDRESS_ID, EMAIL, PHONE_NUMBER, PHOTOGRAPH) VALUES (50, 48, '7some@gmail.com', '514-876-5308', 'http://www.google.com/');
+insert into Membership.Adults (MEMBER_ID, ADDRESS_ID, EMAIL, PHONE_NUMBER, PHOTOGRAPH) VALUES (51, 49, '8some@gmail.com', '514-876-5409', 'http://www.google.com/');
+insert into Membership.Adults (MEMBER_ID, ADDRESS_ID, EMAIL, PHONE_NUMBER, PHOTOGRAPH) VALUES (52, 50, '9some@gmail.com', '514-876-5402', 'http://www.google.com/');
+insert into Membership.Adults (MEMBER_ID, ADDRESS_ID, EMAIL, PHONE_NUMBER, PHOTOGRAPH) VALUES (53, 51, 'some1@gmail.com', '514-876-5403', 'http://www.google.com/');
+insert into Membership.Adults (MEMBER_ID, ADDRESS_ID, EMAIL, PHONE_NUMBER, PHOTOGRAPH) VALUES (54, 52, 'some2@gmail.com', '514-876-5404', 'http://www.google.com/');
+insert into Membership.Adults (MEMBER_ID, ADDRESS_ID, EMAIL, PHONE_NUMBER, PHOTOGRAPH) VALUES (55, 53, 'some3@gmail.com', '514-876-5405', 'http://www.google.com/');
+insert into Membership.Adults (MEMBER_ID, ADDRESS_ID, EMAIL, PHONE_NUMBER, PHOTOGRAPH) VALUES (56, 54, 'some4@gmail.com', '514-876-5406', 'http://www.google.com/');
+insert into Membership.Adults (MEMBER_ID, ADDRESS_ID, EMAIL, PHONE_NUMBER, PHOTOGRAPH) VALUES (57, 55, 'some5@gmail.com', '514-876-5407', 'http://www.google.com/');
+insert into Membership.Adults (MEMBER_ID, ADDRESS_ID, EMAIL, PHONE_NUMBER, PHOTOGRAPH) VALUES (58, 56, 'some6@gmail.com', '514-876-5408', 'http://www.google.com/');
+insert into Membership.Adults (MEMBER_ID, ADDRESS_ID, EMAIL, PHONE_NUMBER, PHOTOGRAPH) VALUES (59, 57, 'some7@gmail.com', '514-876-5409', 'http://www.google.com/');
+insert into Membership.Adults (MEMBER_ID, ADDRESS_ID, EMAIL, PHONE_NUMBER, PHOTOGRAPH) VALUES (60, 58, 'some8@gmail.com', '514-876-5402', 'http://www.google.com/');
+insert into Membership.Adults (MEMBER_ID, ADDRESS_ID, EMAIL, PHONE_NUMBER, PHOTOGRAPH) VALUES (61, 59, 'some9@gmail.com', '514-876-5403', 'http://www.google.com/');
+insert into Membership.Adults (MEMBER_ID, ADDRESS_ID, EMAIL, PHONE_NUMBER, PHOTOGRAPH) VALUES (62, 60, 'some0@gmail.com', '514-876-5404', 'http://www.google.com/');
 
+
+--Delete all data from table Membership.Adults and Membership.Juveniles
+Delete from Membership.Adults;
+Delete from Membership.Juveniles;
 select * from Membership.Adults;
 
 -- populate table Membership.juveniles
 -- TODO: the junevile table is setting a member both as a juvenile and an adult. This is not correct. we need to fix this.
-insert into Membership.Juveniles (member_ID, adult_ID) VALUES (1, 1);
-insert into Membership.Juveniles (member_ID, adult_ID) VALUES (2, 2);
-insert into Membership.Juveniles (member_ID, adult_ID) VALUES (3, 3);
-insert into Membership.Juveniles (member_ID, adult_ID) VALUES (4, 4);
-insert into Membership.Juveniles (member_ID, adult_ID) VALUES (5, 5);
-insert into Membership.Juveniles (member_ID, adult_ID) VALUES (6, 6);
-insert into Membership.Juveniles (member_ID, adult_ID) VALUES (7, 7);
-insert into Membership.Juveniles (member_ID, adult_ID) VALUES (8, 8);
-insert into Membership.Juveniles (member_ID, adult_ID) VALUES (9, 9);
-insert into Membership.Juveniles (member_ID, adult_ID) VALUES (10, 10);
-insert into Membership.Juveniles (member_ID, adult_ID) VALUES (11, 11);
-insert into Membership.Juveniles (member_ID, adult_ID) VALUES (12, 12);
-insert into Membership.Juveniles (member_ID, adult_ID) VALUES (13, 13);
-insert into Membership.Juveniles (member_ID, adult_ID) VALUES (14, 14);
-insert into Membership.Juveniles (member_ID, adult_ID) VALUES (15, 15);
-insert into Membership.Juveniles (member_ID, adult_ID) VALUES (16, 16);
-insert into Membership.Juveniles (member_ID, adult_ID) VALUES (17, 17);
-insert into Membership.Juveniles (member_ID, adult_ID) VALUES (18, 18);
-insert into Membership.Juveniles (member_ID, adult_ID) VALUES (19, 19);
-insert into Membership.Juveniles (member_ID, adult_ID) VALUES (20, 20);
+-- All adults have an associated juvenile in the way it was populated, we need to populate it differently.
+insert into Membership.Juveniles (member_ID, adult_ID) VALUES (43, 161);
+insert into Membership.Juveniles (member_ID, adult_ID) VALUES (2, 162);
+insert into Membership.Juveniles (member_ID, adult_ID) VALUES (3, 163);
+insert into Membership.Juveniles (member_ID, adult_ID) VALUES (4, 164);
+insert into Membership.Juveniles (member_ID, adult_ID) VALUES (5, 165);
+insert into Membership.Juveniles (member_ID, adult_ID) VALUES (6, 166);
+
 
 select*from Membership.Juveniles
 
 -- populate table Borrows.loans
-insert into Borrows.loans (isbn_ID, member_ID, checkout_date, due_date) VALUES ('80-902734-5-6', 1, GETDATE(), DATEADD(dw, 14, GETDATE()));
-insert into Borrows.loans (isbn_ID, member_ID, checkout_date, due_date) VALUES ('80-902734-5-6', 2, GETDATE(), DATEADD(dw, 14, GETDATE()));
-insert into Borrows.loans (isbn_ID, member_ID, checkout_date, due_date) VALUES ('80-902734-5-6', 3, GETDATE(), DATEADD(day, 14, GETDATE()));
-insert into Borrows.loans (isbn_ID, member_ID, checkout_date, due_date) VALUES ('80-902734-5-6', 4, GETDATE(), DATEADD(dw, 14, GETDATE()));
-insert into Borrows.loans (isbn_ID, member_ID) VALUES ('80-902734-5-6', 5);
-insert into Borrows.loans (isbn_ID, member_ID) VALUES ('80-902734-5-6', 6);
-insert into Borrows.loans (isbn_ID, member_ID) VALUES ('80-902734-5-6', 7);
-insert into Borrows.loans (isbn_ID, member_ID) VALUES ('80-902734-5-6', 8);
-insert into Borrows.loans (isbn_ID, member_ID) VALUES ('80-902734-5-6', 9);
-insert into Borrows.loans (isbn_ID, member_ID) VALUES ('10-902734-1-6', 10);
-insert into Borrows.loans (isbn_ID, member_ID) VALUES ('20-902734-1-6', 11);
-insert into Borrows.loans (isbn_ID, member_ID) VALUES ('30-902734-1-6', 12);
-insert into Borrows.loans (isbn_ID, member_ID) VALUES ('40-902734-1-6', 13);
-insert into Borrows.loans (isbn_ID, member_ID) VALUES ('50-902734-1-6', 14);
-insert into Borrows.loans (isbn_ID, member_ID) VALUES ('80-902734-2-6', 15);
-insert into Borrows.loans (isbn_ID, member_ID) VALUES ('80-902734-3-6', 16);
-insert into Borrows.loans (isbn_ID, member_ID) VALUES ('80-302734-4-6', 17);
-insert into Borrows.loans (isbn_ID, member_ID) VALUES ('80-902734-5-6', 18);
-insert into Borrows.loans (isbn_ID, member_ID) VALUES ('80-902734-6-6', 19);
-insert into Borrows.loans (isbn_ID, member_ID) VALUES ('80-902734-7-6', 20);
-
+insert into Borrows.Loans (isbn_ID, member_ID, checkout_date, due_date) VALUES ('80-902734-5-6', 1, GETDATE(), DATEADD(dw, 14, GETDATE()));
+insert into Borrows.Loans (isbn_ID, member_ID, checkout_date, due_date) VALUES ('80-902734-5-6', 2, GETDATE(), DATEADD(dw, 14, GETDATE()));
+insert into Borrows.Loans (isbn_ID, member_ID, checkout_date, due_date) VALUES ('80-902734-5-6', 3, GETDATE(), DATEADD(day, 14, GETDATE()));
+insert into Borrows.Loans (isbn_ID, member_ID, checkout_date, due_date) VALUES ('80-902734-5-6', 4, GETDATE(), DATEADD(dw, 14, GETDATE()));
+insert into Borrows.Loans (isbn_ID, member_ID) VALUES ('80-902734-5-6', 5);
+insert into Borrows.Loans (isbn_ID, member_ID) VALUES ('80-902734-5-6', 6);
+insert into Borrows.Loans (isbn_ID, member_ID) VALUES ('80-902734-5-6', 7);
+insert into Borrows.Loans (isbn_ID, member_ID) VALUES ('80-902734-5-6', 8);
+insert into Borrows.Loans (isbn_ID, member_ID) VALUES ('80-902734-5-6', 9);
+insert into Borrows.Loans (isbn_ID, member_ID) VALUES ('10-902734-1-6', 10);
+insert into Borrows.Loans (isbn_ID, member_ID) VALUES ('20-902734-1-6', 11);
+insert into Borrows.Loans (isbn_ID, member_ID) VALUES ('30-902734-1-6', 12);
+insert into Borrows.Loans (isbn_ID, member_ID) VALUES ('40-902734-1-6', 13);
+insert into Borrows.Loans (isbn_ID, member_ID) VALUES ('50-902734-1-6', 14);
+insert into Borrows.Loans (isbn_ID, member_ID) VALUES ('80-902734-2-6', 15);
+insert into Borrows.Loans (isbn_ID, member_ID) VALUES ('80-902734-3-6', 16);
+insert into Borrows.Loans (isbn_ID, member_ID) VALUES ('80-302734-4-6', 17);
+insert into Borrows.Loans (isbn_ID, member_ID) VALUES ('80-902734-5-6', 18);
+insert into Borrows.Loans (isbn_ID, member_ID) VALUES ('80-902734-6-6', 19);
+insert into Borrows.Loans (isbn_ID, member_ID) VALUES ('80-902734-7-6', 20);
+select * from Borrows.Loans;
+Delete from Borrows.Loans;
 -- populate table Borrows.Reservations
 insert into Borrows.Reservations (isbn_ID, member_ID, log_date) VALUES ('80-902734-1-6', 1, CONVERT(date, GETDATE()));
 insert into Borrows.Reservations (isbn_ID, member_ID) VALUES ('80-902734-1-6', 2);
@@ -294,6 +293,8 @@ insert into Borrows.Reservations (isbn_ID, member_ID) VALUES ('80-902734-1-8', 1
 insert into Borrows.Reservations (isbn_ID, member_ID) VALUES ('80-902734-1-8', 18);
 insert into Borrows.Reservations (isbn_ID, member_ID) VALUES ('80-902734-1-8', 19);
 insert into Borrows.Reservations (isbn_ID, member_ID) VALUES ('80-902734-1-8', 20);
+Delete from Borrows.Reservations;
+select * from Borrows.Reservations;
 
 -- make a total of every copies on_loan
 select count(on_loan) as total_on_loan from ItemCollection.Copies;

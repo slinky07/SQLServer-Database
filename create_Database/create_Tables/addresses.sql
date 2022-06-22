@@ -1,4 +1,4 @@
-use AragonMunicipalLibrary
+use AragonMunicipalLibrary2;
 ;
 go
 
@@ -13,4 +13,6 @@ create table Membership.Addresses
     postal_code  char(6)         not null
 )
 ;
+
+drop table Membership.Addresses;
 go

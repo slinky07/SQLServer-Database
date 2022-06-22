@@ -2,6 +2,24 @@
    Planning to add is guardian or has minor field to know if adult is associated with minor
  */
 use AragonMunicipalLibrary;
+
+create function Membership.check_if_adult_is_guardian(@adult_ID int)
+    returns varchar(3)
+as
+    begin
+          declare @isGuardian bit;
+if (select count ( j.adult_ID)
+    from    Membership.Juveniles j,
+            Membership.Adults a
+        where j.adult_ID = @adult_ID) >=1 return 'Yes'
+--             if @isGuardian is null
+--                 return 'No';
+            else
+                return 'No';
+                return '';
+        end
+;
+go
 create view AdultwideView as
 
     select m.member_ID                                                          as 'Member ID',
