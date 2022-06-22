@@ -12,7 +12,11 @@ create table Membership.Adults
     photograph   IMAGE       NOT NULL,
     PRIMARY KEY (adult_id)
 )
+
+/*Changed photograph data type to VarBinary */
+ALTER TABLE Membership.Adults ALTER COLUMN photograph VARBINARY(MAX)
 ;
+/*TODO: Reflect changes in table instead of alter command */
 go
 /*drop table Members.Adults;
 -- alter table Members.Adults phone number. lenght to be 20. some countries have more than 10. and you  have symbol - that is added in phone number. it is a string so doesnt matter.

@@ -31,6 +31,8 @@ if (select count ( j.adult_ID)
         end
 ;
 go
+
+
 -- drop function Membership.check_if_adult_is_guardian;
 -- EXEC sp_help check_if_adult_is_guardian;
 

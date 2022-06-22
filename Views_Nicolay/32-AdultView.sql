@@ -1,62 +1,63 @@
 /*
-   Planning to add is guardian or has minor field to know if adult is associated with minor
+   Planning to add is guardian or has minor field to know if adult is associated with minor. My AdultView broke since last night.
  */
-use AragonMunicipalLibrary;
 
 create function Membership.check_if_adult_is_guardian(@adult_ID int)
     returns varchar(3)
 as
-    begin
-          declare @isGuardian bit;
-if (select count ( j.adult_ID)
-    from    Membership.Juveniles j,
-            Membership.Adults a
-        where j.adult_ID = @adult_ID) >=1 return 'Yes'
---             if @isGuardian is null
+begin
+    declare @isGuardian bit;
+    if (select count(j.adult_ID)
+        from Membership.Juveniles j,
+             Membership.Adults a
+        where j.adult_ID = @adult_ID) >= 1
+        return 'Yes'
+        --             if @isGuardian is null
 --                 return 'No';
-            else
-                return 'No';
-                return '';
-        end
+    else
+        return 'No';
+    return '';
+end
 ;
 go
-create view AdultwideView as
+create view Membership.AdultWideView as
 
-    select m.member_ID                                                          as 'Member ID',
-           a.adult_ID                                                           as 'Adult ID',
-           m.first_name + '' + m.middle_name + '' + m.last_name                 as 'Name',
-           a.photograph                                                         as 'Photo',
-           m.date_of_birth                                                      as 'Date of Birth',
-           a.phone_number                                                       as 'Phone Number',
-           ad.civic_number + ',' + ad.street + ',' + c.city + ',' + ad.province as 'Address',
-           ad.unit_number                                                       as 'Unit Number',
-           ad.postal_code                                                       as 'Postal Code',
-           'No'                                                                 as 'Minor',
+select distinct m.member_ID                                                          as 'Member ID',
+                a.adult_ID                                                           as 'Adult ID',
+                m.first_name + '' + m.middle_name + '' + m.last_name                 as 'Name',
+                a.photograph                                                         as 'Photo',
+                m.date_of_birth                                                      as 'Date of Birth',
+                a.phone_number                                                       as 'Phone Number',
+                ad.civic_number + ',' + ad.street + ',' + c.city + ',' + ad.province as 'Address',
+                ad.unit_number                                                       as 'Unit Number',
+                ad.postal_code                                                       as 'Postal Code',
+                'No'                                                                 as 'Minor',
 
-           Membership.check_if_adult_is_guardian(a.adult_ID)             as 'Is Guardian'
+                Membership.check_if_adult_is_guardian(a.adult_ID)                    as 'Is Guardian'
 
 
-    from Membership.Members m,
-         Membership.Adults a,
-         Membership.Cities c,
-         Membership.Juveniles j,
-         Membership.Addresses ad
+from Membership.Members m,
+     Membership.Adults a,
+     Membership.Cities c,
+     Membership.Juveniles j,
+     Membership.Addresses ad
 
-    where m.member_ID = a.member_ID
-      and a.address_ID = ad.address_ID
-      and ad.city_ID = c.city_ID
+where m.member_ID = a.member_ID
+  and a.address_ID = ad.address_ID
+  and ad.city_ID = c.city_ID
 ;
 
-declare @test int;
-set @test = 131;
- Membership.check_if_adult_is_guardian (@test);
+-- declare @test int;
+-- set @test = 131;
+--  Membership.check_if_adult_is_guardian (@test);
 
-select*
-from AdultwideView;
-drop view AdultwideView;
+
+-- drop view Membership.AdultwideView;
 go
 
--- TODO this view is also seeming to be broken
+
+
+
 -- create view ChildwideView as
 --
 --     select m.member_ID                                          as 'Member ID',
