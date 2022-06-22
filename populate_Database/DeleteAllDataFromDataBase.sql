@@ -13,8 +13,8 @@ delete from ItemCollection.Titles;
 delete from ItemCollection.Publisher;
 
 
-delete from Membership.Cities;
 delete from Membership.Addresses;
+delete from Membership.Cities;
 delete from Membership.Adults;
 delete from Membership.Juveniles;
 delete from Membership.Members;
