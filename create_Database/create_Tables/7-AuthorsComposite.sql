@@ -5,7 +5,7 @@
 /**
  @table ItemCollection.AuthorComposite is a composite key of ItemCollection.Author to implement many to many relationship
 */
-create table  ItemCollection.AuthorComposite
+create table  ItemCollection.AuthorsComposite
 (
     title_ID  int not null,
     author_ID int not null,

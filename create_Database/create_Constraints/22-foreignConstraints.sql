@@ -32,23 +32,23 @@ ALTER TABLE Membership.Addresses
 ;
 go
 
-alter table ItemCollection.AuthorComposite
-    ADD CONSTRAINT fk_AuthorComposite_titles
+alter table ItemCollection.AuthorsComposite
+    ADD CONSTRAINT fk_AuthorsComposite_titles
     FOREIGN KEY (title_ID) references ItemCollection.Titles(title_ID)
 ;
 
-alter table ItemCollection.AuthorComposite
-    ADD CONSTRAINT fk_AuthorComposite_authors
+alter table ItemCollection.AuthorsComposite
+    ADD CONSTRAINT fk_AuthorsComposite_authors
     FOREIGN KEY (author_ID) references ItemCollection.Authors(author_ID)
 ;
-alter table ItemCollection.GenreComposite
-    ADD CONSTRAINT fk_GenreComposite_titles
+alter table ItemCollection.GenresComposite
+    ADD CONSTRAINT fk_GenresComposite_titles
     FOREIGN KEY (title_ID) references ItemCollection.Titles(title_ID)
 ;
 
 alter table ItemCollection.GenreComposite
-    ADD CONSTRAINT fk_GenreComposite_genre
-    FOREIGN KEY (genre_ID) references ItemCollection.Genre(genre_ID)
+    ADD CONSTRAINT fk_GenresComposite_genre
+    FOREIGN KEY (genre_ID) references ItemCollection.Genres(genre_ID)
 ;
 
 alter table ItemCollection.Titles

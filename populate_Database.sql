@@ -2,18 +2,18 @@ use AragonMunicipalLibrary
 ;
 go
 
--- populate table Library.genre
-insert into ItemCollection.Genre (genre) values ('Fantasy');
-insert into ItemCollection.Genre (genre) values ('Science Fiction');
-insert into ItemCollection.Genre (genre) values ('Mystery');
-insert into ItemCollection.Genre (genre) values ('Romance');
-insert into ItemCollection.Genre (genre) values ('Thriller');
-insert into ItemCollection.Genre (genre) values ('Drama');
-insert into ItemCollection.Genre (genre) values ('Action');
-insert into ItemCollection.Genre (genre) values ('Adventure');
-insert into ItemCollection.Genre (genre) values ('Comedy');
-insert into ItemCollection.Genre (genre) values ('War');
-insert into ItemCollection.Genre (genre) values ('Western');
+-- populate table Library.genres
+insert into ItemCollection.Genres (genre) values ('Fantasy');
+insert into ItemCollection.Genres (genre) values ('Science Fiction');
+insert into ItemCollection.Genres (genre) values ('Mystery');
+insert into ItemCollection.Genres (genre) values ('Romance');
+insert into ItemCollection.Genres (genre) values ('Thriller');
+insert into ItemCollection.Genres (genre) values ('Drama');
+insert into ItemCollection.Genres (genre) values ('Action');
+insert into ItemCollection.Genres (genre) values ('Adventure');
+insert into ItemCollection.Genres (genre) values ('Comedy');
+insert into ItemCollection.Genres (genre) values ('War');
+insert into ItemCollection.Genres (genre) values ('Western');
 
 -- populate table Library.publisher
 insert into ItemCollection.Publisher (publisher) values ('Random House');
@@ -83,42 +83,42 @@ insert into ItemCollection.Titles (title, synopsis, publisher_ID) VALUES ('The F
 insert into ItemCollection.Titles (title, synopsis, publisher_ID) VALUES ('The Book Thief', 'The Book Thief is a novel written by Markus Zusak. It is the first book in the Green Movement, and is the first book in the Green Movement to be published in hardcover.', 9);
 insert into ItemCollection.Titles (title, synopsis, publisher_ID) VALUES ('The Catcher in the Rye', 'The Catcher in the Rye is a novel written by J. D. Salinger. It is the first book in the Green Movement, and is the first book in the Green Movement to be published in hardcover.', 10);
 select * from ItemCollection.Titles
--- populate table AuthorComposite
-insert into ItemCollection.AuthorComposite (author_ID, title_ID) values (1, 1);
-insert into ItemCollection.AuthorComposite (author_ID, title_ID) values (1, 2);
-insert into ItemCollection.AuthorComposite (author_ID, title_ID) values (1, 3);
-insert into ItemCollection.AuthorComposite (author_ID, title_ID) values (1, 4);
-insert into ItemCollection.AuthorComposite (author_ID, title_ID) values (1, 5);
-insert into ItemCollection.AuthorComposite (author_ID, title_ID) values (1, 6);
-insert into ItemCollection.AuthorComposite (author_ID, title_ID) values (1, 7);
-insert into ItemCollection.AuthorComposite (author_ID, title_ID) values (2, 8);
-insert into ItemCollection.AuthorComposite (author_ID, title_ID) values (3, 9);
-insert into ItemCollection.AuthorComposite (author_ID, title_ID) values (4, 10);
-insert into ItemCollection.AuthorComposite (author_ID, title_ID) values (2, 11);
-insert into ItemCollection.AuthorComposite (author_ID, title_ID) values (4, 12);
-insert into ItemCollection.AuthorComposite (author_ID, title_ID) values (5, 13);
-insert into ItemCollection.AuthorComposite (author_ID, title_ID) values (6, 14);
-insert into ItemCollection.AuthorComposite (author_ID, title_ID) values (7, 15);
-insert into ItemCollection.AuthorComposite (author_ID, title_ID) values (8, 16);
-select * from ItemCollection.AuthorComposite;
--- populate table GenreComposite
-insert into ItemCollection.GenreComposite (genre_ID, title_ID) values (1, 1);
-insert into ItemCollection.GenreComposite (genre_ID, title_ID) values (1, 2);
-insert into ItemCollection.GenreComposite (genre_ID, title_ID) values (1, 3);
-insert into ItemCollection.GenreComposite (genre_ID, title_ID) values (1, 4);
-insert into ItemCollection.GenreComposite (genre_ID, title_ID) values (1, 5);
-insert into ItemCollection.GenreComposite (genre_ID, title_ID) values (1, 6);
-insert into ItemCollection.GenreComposite (genre_ID, title_ID) values (1, 7);
-insert into ItemCollection.GenreComposite (genre_ID, title_ID) values (2, 8);
-insert into ItemCollection.GenreComposite (genre_ID, title_ID) values (3, 9);
-insert into ItemCollection.GenreComposite (genre_ID, title_ID) values (4, 10);
-insert into ItemCollection.GenreComposite (genre_ID, title_ID) values (2, 11);
-insert into ItemCollection.GenreComposite (genre_ID, title_ID) values (4, 12);
-insert into ItemCollection.GenreComposite (genre_ID, title_ID) values (5, 13);
-insert into ItemCollection.GenreComposite (genre_ID, title_ID) values (6, 14);
-insert into ItemCollection.GenreComposite (genre_ID, title_ID) values (7, 15);
-insert into ItemCollection.GenreComposite (genre_ID, title_ID) values (8, 16);
-select * from ItemCollection.GenreComposite;
+-- populate table AuthorsComposite
+insert into ItemCollection.AuthorsComposite (author_ID, title_ID) values (1, 1);
+insert into ItemCollection.AuthorsComposite (author_ID, title_ID) values (1, 2);
+insert into ItemCollection.AuthorsComposite (author_ID, title_ID) values (1, 3);
+insert into ItemCollection.AuthorsComposite (author_ID, title_ID) values (1, 4);
+insert into ItemCollection.AuthorsComposite (author_ID, title_ID) values (1, 5);
+insert into ItemCollection.AuthorsComposite (author_ID, title_ID) values (1, 6);
+insert into ItemCollection.AuthorsComposite (author_ID, title_ID) values (1, 7);
+insert into ItemCollection.AuthorsComposite (author_ID, title_ID) values (2, 8);
+insert into ItemCollection.AuthorsComposite (author_ID, title_ID) values (3, 9);
+insert into ItemCollection.AuthorsComposite (author_ID, title_ID) values (4, 10);
+insert into ItemCollection.AuthorsComposite (author_ID, title_ID) values (2, 11);
+insert into ItemCollection.AuthorsComposite (author_ID, title_ID) values (4, 12);
+insert into ItemCollection.AuthorsComposite (author_ID, title_ID) values (5, 13);
+insert into ItemCollection.AuthorsComposite (author_ID, title_ID) values (6, 14);
+insert into ItemCollection.AuthorsComposite (author_ID, title_ID) values (7, 15);
+insert into ItemCollection.AuthorsComposite (author_ID, title_ID) values (8, 16);
+select * from ItemCollection.AuthorsComposite;
+-- populate table GenresComposite
+insert into ItemCollection.GenresComposite (genre_ID, title_ID) values (1, 1);
+insert into ItemCollection.GenresComposite (genre_ID, title_ID) values (1, 2);
+insert into ItemCollection.GenresComposite (genre_ID, title_ID) values (1, 3);
+insert into ItemCollection.GenresComposite (genre_ID, title_ID) values (1, 4);
+insert into ItemCollection.GenresComposite (genre_ID, title_ID) values (1, 5);
+insert into ItemCollection.GenresComposite (genre_ID, title_ID) values (1, 6);
+insert into ItemCollection.GenresComposite (genre_ID, title_ID) values (1, 7);
+insert into ItemCollection.GenresComposite (genre_ID, title_ID) values (2, 8);
+insert into ItemCollection.GenresComposite (genre_ID, title_ID) values (3, 9);
+insert into ItemCollection.GenresComposite (genre_ID, title_ID) values (4, 10);
+insert into ItemCollection.GenresComposite (genre_ID, title_ID) values (2, 11);
+insert into ItemCollection.GenresComposite (genre_ID, title_ID) values (4, 12);
+insert into ItemCollection.GenresComposite (genre_ID, title_ID) values (5, 13);
+insert into ItemCollection.GenresComposite (genre_ID, title_ID) values (6, 14);
+insert into ItemCollection.GenresComposite (genre_ID, title_ID) values (7, 15);
+insert into ItemCollection.GenresComposite (genre_ID, title_ID) values (8, 16);
+select * from ItemCollection.GenresComposite;
 
 -- populate table ItemCollection
 insert into ItemCollection.Items (isbn_id, title_ID, copy_ID, binding, translation) VALUES ( '80-902734-1-6', 1, 1, 'Paperback', 'English');
