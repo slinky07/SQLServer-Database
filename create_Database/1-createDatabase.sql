@@ -20,7 +20,7 @@ for CCCS-330-754 in Spring 2022 semester.
  */
 use master
 ;
-
+go
 if exists (select * from sys.databases where name = 'AragonMunicipalLibrary')
 begin
   print '=============================Database exists. Dropping and re-creating it.============================='

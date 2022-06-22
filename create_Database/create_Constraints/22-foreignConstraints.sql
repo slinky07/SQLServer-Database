@@ -47,7 +47,7 @@ alter table ItemCollection.GenresComposite
 ;
 
 alter table ItemCollection.GenresComposite
-    ADD CONSTRAINT fk_GenresComposite_genre
+    ADD CONSTRAINT fk_GenresComposite_genres
     FOREIGN KEY (genre_ID) references ItemCollection.Genres(genre_ID)
 ;
 
@@ -81,7 +81,7 @@ alter table Membership.Juveniles
 ;
 
 alter table Membership.Juveniles
-    ADD CONSTRAINT fk_juveniles_addresses
+    ADD CONSTRAINT fk_juveniles_adult
     FOREIGN KEY (adult_ID) REFERENCES Membership.Adults(adult_ID)
 ;
 go

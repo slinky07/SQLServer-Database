@@ -2,7 +2,7 @@ use AragonMunicipalLibrary
 ;
 go
 
--- populate table Library.genres
+-- populate table ItemCollection.genres
 insert into ItemCollection.Genres (genre) values ('Fantasy');
 insert into ItemCollection.Genres (genre) values ('Science Fiction');
 insert into ItemCollection.Genres (genre) values ('Mystery');
@@ -15,7 +15,9 @@ insert into ItemCollection.Genres (genre) values ('Comedy');
 insert into ItemCollection.Genres (genre) values ('War');
 insert into ItemCollection.Genres (genre) values ('Western');
 
--- populate table Library.publisher
+select * from ItemCollection.Genres;
+
+-- populate table ItemCollection.publisher
 insert into ItemCollection.Publisher (publisher) values ('Random House');
 insert into ItemCollection.Publisher (publisher) values ('Harper Collins');
 insert into ItemCollection.Publisher (publisher) values ('Penguin Books');
@@ -27,8 +29,10 @@ insert into ItemCollection.Publisher (publisher) values ('Scholastic');
 insert into ItemCollection.Publisher (publisher) values ('Harper Business');
 insert into ItemCollection.Publisher (publisher) values ('Harper Paperbacks');
 insert into ItemCollection.Publisher (publisher) values ('Harper Collins');
+
 select * from ItemCollection.Publisher;
--- populate table Library.author
+
+-- populate table ItemCollection.author
 insert into ItemCollection.Authors (first_name, last_name) values ('J.K.', 'Rowling');
 insert into ItemCollection.Authors (first_name, last_name) values ('J.R.R.', 'Tolkien');
 insert into ItemCollection.Authors (first_name, last_name) values ('Harper', 'Lee');
@@ -40,6 +44,7 @@ insert into ItemCollection.Authors (first_name, last_name) values ('Stephen', 'k
 insert into ItemCollection.Authors (first_name, last_name) values ('Anne', 'Rice');
 insert into ItemCollection.Authors (first_name, last_name) values ('Beatrix', 'Potter');
 insert into ItemCollection.Authors (first_name, last_name) values ('Zane', 'Grey');
+
 select * from ItemCollection.Authors;
 
 -- populate table ItemCollection.copies
@@ -65,6 +70,8 @@ insert into ItemCollection.Copies (copy_amt) VALUES (19);
 insert into ItemCollection.Copies (copy_amt) VALUES (20);
 insert into ItemCollection.Copies (copy_amt) VALUES (21);
 
+select * from ItemCollection.Copies;
+
 -- populate table ItemCollection.Title
 insert into ItemCollection.Titles (title, synopsis, publisher_ID) values ('Harry Potter and the Philosopher''s Stone', 'A young wizard, Harry Potter, discovers that he is the only one who can stop the evil Voldemort, who is trying to take over the world.', 1);
 insert into ItemCollection.Titles (title, synopsis, publisher_ID) values ('Harry Potter and the Chamber of Secrets', 'Harry Potter and the Chamber of Secrets is the second book in the Harry Potter series. It follows Harry Potter, who has escaped from theprisoner of Azkaban and has worked his way to find the one who has stolen a magical book that allows him to fly. He then must fight the wizard who has been trying to take over the world.', 1);
@@ -82,8 +89,10 @@ insert into ItemCollection.Titles (title, synopsis, publisher_ID) VALUES ('The D
 insert into ItemCollection.Titles (title, synopsis, publisher_ID) VALUES ('The Fault in Our Stars', 'The Fault in Our Stars is a novel written by John Green. It is the first book in the Green Movement, and is the first book in the Green Movement to be published in hardcover.', 8);
 insert into ItemCollection.Titles (title, synopsis, publisher_ID) VALUES ('The Book Thief', 'The Book Thief is a novel written by Markus Zusak. It is the first book in the Green Movement, and is the first book in the Green Movement to be published in hardcover.', 9);
 insert into ItemCollection.Titles (title, synopsis, publisher_ID) VALUES ('The Catcher in the Rye', 'The Catcher in the Rye is a novel written by J. D. Salinger. It is the first book in the Green Movement, and is the first book in the Green Movement to be published in hardcover.', 10);
+
 select * from ItemCollection.Titles
--- populate table AuthorsComposite
+
+-- populate table ItemCollection.AuthorsComposite
 insert into ItemCollection.AuthorsComposite (author_ID, title_ID) values (1, 1);
 insert into ItemCollection.AuthorsComposite (author_ID, title_ID) values (1, 2);
 insert into ItemCollection.AuthorsComposite (author_ID, title_ID) values (1, 3);
@@ -101,7 +110,7 @@ insert into ItemCollection.AuthorsComposite (author_ID, title_ID) values (6, 14)
 insert into ItemCollection.AuthorsComposite (author_ID, title_ID) values (7, 15);
 insert into ItemCollection.AuthorsComposite (author_ID, title_ID) values (8, 16);
 select * from ItemCollection.AuthorsComposite;
--- populate table GenresComposite
+-- populate table ItemCollection.GenresComposite
 insert into ItemCollection.GenresComposite (genre_ID, title_ID) values (1, 1);
 insert into ItemCollection.GenresComposite (genre_ID, title_ID) values (1, 2);
 insert into ItemCollection.GenresComposite (genre_ID, title_ID) values (1, 3);
@@ -118,6 +127,7 @@ insert into ItemCollection.GenresComposite (genre_ID, title_ID) values (5, 13);
 insert into ItemCollection.GenresComposite (genre_ID, title_ID) values (6, 14);
 insert into ItemCollection.GenresComposite (genre_ID, title_ID) values (7, 15);
 insert into ItemCollection.GenresComposite (genre_ID, title_ID) values (8, 16);
+
 select * from ItemCollection.GenresComposite;
 
 -- populate table ItemCollection
@@ -139,9 +149,7 @@ insert into ItemCollection.Items (isbn_id, title_ID, copy_ID, binding, translati
 insert into ItemCollection.Items (isbn_id, title_ID, copy_ID, binding, translation) VALUES ( '80-902734-3-6', 1, 1, 'Paperback', 'Japanese');
 insert into ItemCollection.Items (isbn_id, title_ID, copy_ID, binding, translation) VALUES ( '80-302734-4-6', 1, 2, 'Paperback', 'Hindi');
 insert into ItemCollection.Items (isbn_id, title_ID, copy_ID, binding, translation) VALUES ( '80-902734-2-6', 1, 3, 'Paperback', 'English');
-select * from ItemCollection.Items;
 
-
-
+select * from ItemCollection.Items
 ;
 go

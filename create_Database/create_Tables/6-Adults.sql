@@ -1,7 +1,7 @@
 use AragonMunicipalLibrary;
 ;
 go
-
+-- TODO : photograph should not be of type Imagem that is deprecated and we would get points taken off from tje assignment.
 create table Membership.Adults
 (
     adult_ID     int         NOT NULL IDENTITY (1,1),

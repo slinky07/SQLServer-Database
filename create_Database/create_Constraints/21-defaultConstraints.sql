@@ -41,4 +41,11 @@ go
 alter table ItemCollection.Copies
     ADD CONSTRAINT df_on_loan
     DEFAULT 0 for on_loan
+;
+go
+
+alter table Membership.Members
+    ADD CONSTRAINT df_card_issue_date
+    DEFAULT getdate() for card_issue_date
+;
 go
