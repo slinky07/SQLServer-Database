@@ -34,7 +34,7 @@ where l.member_id = m.member_id
 go
 
 SELECT *
-from Borrows.OnloanView
+from Borrows.OnLoanView
 ;
 go
 
@@ -42,8 +42,8 @@ go
  select only the books with isbn of 80-902734-5-6
  */
 SELECT *
-from Borrows.OnloanView
-where Borrows.OnloanView.isbn_ID = '80-902734-5-6'
+from Borrows.OnLoanView
+where Borrows.OnLoanView.isbn_ID = '80-902734-5-6'
 ;
 go
 
@@ -51,7 +51,7 @@ go
  select only the books loaned by jhon doe
  */
 SELECT *
-from Borrows.OnloanView as olv
+from Borrows.OnLoanView as olv
 where olv.first_name = 'John'
  and olv.last_name = 'Doe'
 ;
@@ -61,7 +61,7 @@ go
     select only the books loaned by member_ID 4
  */
 SELECT *
-from Borrows.OnloanView as olv
+from Borrows.OnLoanView as olv
 where olv.member_id = 4
 ;
 go

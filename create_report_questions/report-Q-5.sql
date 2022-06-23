@@ -1,4 +1,6 @@
-use AragonMunicipalLibrary;
+use AragonMunicipalLibrary
+;
+
 
 /*
     by FBH
@@ -7,16 +9,23 @@ use AragonMunicipalLibrary;
 --TODO ask if this should be included in the running of database or will this become a view or something?
 -- TODO: this is a view
 
-create view PercentageOverdue as
-select *
-from (select count(l.loan_ID) as total_loans,
-             l.return_date    as return_date,
-             l.checkout_date  as checkout_date,
-             l.due_date       as due_date
+create function Borrows.getOverduePercentage()
+    returns decimal
+    as
+    begin
+        declare @overdueCount int, @totalCount int, @overduePercentage decimal
+        set @overdueCount = (select count(*) from Borrows.OverdueView)
 
-      from Borrows.Loans as l
-      where (l.due_date > l.return_date) )as overdue_loans
-concat('Percentage of all loans that eventually becomes overdue: ',
-(select count(l.loan_ID) from Borrows.Loans as l where l.due_date > l.return_date) / (select count(l.loan_ID) from Borrows.Loans as l) * 100, '%')
+        set @totalCount = (select count(*) from Borrows.Loans)
+        return (@overdueCount * 100) / @totalCount
+--         return @totalCount
+    end
 ;
 go
+
+
+select Borrows.getOverduePercentage() as 'Overdue Percentage'
+
+select * from ItemCollection.Copies
+
+-- drop function Borrows.getOverduePercentage

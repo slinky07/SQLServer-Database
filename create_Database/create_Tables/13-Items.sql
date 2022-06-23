@@ -21,3 +21,5 @@ add cover IMAGE null
 go
 */
 -- exec sp_columns Items
+
+select * from ItemCollection.Copies

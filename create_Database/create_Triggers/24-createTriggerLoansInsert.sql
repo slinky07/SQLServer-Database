@@ -1,13 +1,13 @@
 -- use AragonMunicipalLibrary;
 
 -- create a trigger on new insertion of a loan to update the on_loan in table Copies tp add 1
-CREATE TRIGGER [Borrows].onLoanInsert
+create TRIGGER [Borrows].onLoanInsert
     ON Borrows.Loans
     AFTER INSERT
 AS
     BEGIN
         UPDATE c
-        SET c.on_loan =c.on_loan + 1
+        SET c.on_loan = c.on_loan + 1
             from ItemCollection.Copies c,
                  ItemCollection.Items i,
                  Borrows.Loans l
@@ -32,7 +32,6 @@ AS
     END;
 go
 
-select * from ItemCollection.Copies
 /*
 -- create a trigger on UPDATE of a loan to update the on_loan in table Copies to subtract 1
 -- doeesnt make sens as a loan being se to returned will not be updated furthermore
