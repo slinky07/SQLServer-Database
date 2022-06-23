@@ -35,7 +35,8 @@ insert into Borrows.Reservations (isbn_ID, member_ID) VALUES ('80-902734-1-8', 1
 select * from Borrows.Reservations
 ;
 go
-
+update Borrows.Loans set return_status = 1 where member_ID = 1;
+update Borrows.Loans set return_status = 1 where member_ID = 5;
 -- make a total of every copies on_loan
 select count(on_loan) as total_on_loan from ItemCollection.Copies
 ;
