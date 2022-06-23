@@ -1,5 +1,5 @@
-use AragonMunicipalLibrary
-;
+-- use AragonMunicipalLibrary
+-- ;
 
 -- reserve trigger when insert , update on)reserve amt is updated +1
 CREATE TRIGGER [Borrows].update_reserve_amt_after_Reservation_change
@@ -17,6 +17,3 @@ AS
     END
 ;
 go
-
-
---i will be right back

@@ -1,6 +1,6 @@
-use AragonMunicipalLibrary
-;
-go
+-- use AragonMunicipalLibrary
+-- ;
+-- go
 
 create function Borrows.percentLoanedLastYear(@isbn char(13), @member_ID int)
     returns varchar(3)

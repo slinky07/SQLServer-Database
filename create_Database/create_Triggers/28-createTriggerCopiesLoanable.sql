@@ -7,6 +7,30 @@
     - Not Loanable if copies_amt = on_loan
     - if copies_amt < on_loan, then there is an error.
  */
+-- use AragonMunicipalLibrary
+-- ;
+-- and only 1 trigger for copy_amt - (on_loan + on_reserve) > 0 then loannable ='Y'
+
+
+create TRIGGER [ItemCollection].trigger_copy_is_loanable
+    ON ItemCollection.Copies
+    FOR INSERT, UPDATE, DELETE
+    AS
+BEGIN
+    update c
+    set c.loanable = 'Y'
+    from ItemCollection.Copies c
+    where c.copy_amt - (c.on_loan + c.on_reserve) > 0;
+END
+BEGIN
+    update c
+    set c.loanable = 'N'
+    from ItemCollection.Copies c
+    where c.copy_amt - (c.on_loan + c.on_reserve) <= 0;
+END
+    ;
+go
+
 
 /*CREATE TRIGGER [ItemCollection].update_loanable_copies_trigger
     ON ItemCollection.Copies

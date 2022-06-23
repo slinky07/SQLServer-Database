@@ -1,7 +1,7 @@
 use AragonMunicipalLibrary
 ;
-
 -- populate table Borrows.loans
+insert into Borrows.Loans (isbn_ID, member_ID, checkout_date) VALUES ('80-902734-5-6', 1, GETDATE())
 insert into Borrows.Loans (isbn_ID, member_ID, checkout_date) VALUES ('80-902734-5-6', 1, GETDATE())
 insert into Borrows.Loans (isbn_ID, member_ID, checkout_date) VALUES ('80-902734-5-6', 2, GETDATE())
 insert into Borrows.Loans (isbn_ID, member_ID, checkout_date) VALUES ('80-902734-5-6', 3, GETDATE())
