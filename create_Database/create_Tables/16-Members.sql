@@ -17,6 +17,8 @@ CREATE TABLE Membership.Members
 
 go
 
+
+select * from Membership.Members;
 /*exec sp_columns Members
 
 DELETE FROM Members.Members WHERE first_name is null or last_name is null ;

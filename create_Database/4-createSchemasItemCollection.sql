@@ -13,3 +13,6 @@ go
 
  */
 --  SELECT name FROM sys.tables
+
+
+select *
