@@ -1,5 +1,5 @@
-use AragonMunicipalLibrary;
-go
+-- use AragonMunicipalLibrary;
+-- go
 
 /*
 Write and execute a query on the title, item, and copy tables that returns the isbn, copy_no, on_loan, title, translation, and cover, and values for rows in the copy table with an ISBN of 1 (one), 500 (five hundred), or 1000 (thousand). Order the result by ISBN column.

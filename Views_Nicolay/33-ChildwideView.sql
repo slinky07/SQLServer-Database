@@ -1,5 +1,5 @@
 -- use master;
-use AragonMunicipalLibrary;
+-- use AragonMunicipalLibrary;
 
 /*
 Create a view and save it as ChildwideView that queries the member,
@@ -55,7 +55,7 @@ go
 
 SELECT * FROM Membership.ChildWideView;
 go
-
-drop view Membership.ChildWideView;
+--
+-- drop view Membership.ChildWideView;
 
 

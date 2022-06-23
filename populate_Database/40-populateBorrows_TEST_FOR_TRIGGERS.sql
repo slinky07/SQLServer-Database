@@ -22,10 +22,13 @@ insert into Borrows.Loans (isbn_ID, member_ID) VALUES ('80-302734-4-6', 17);
 insert into Borrows.Loans (isbn_ID, member_ID) VALUES ('80-902734-5-6', 18);
 insert into Borrows.Loans (isbn_ID, member_ID) VALUES ('80-902734-6-6', 19);
 insert into Borrows.Loans (isbn_ID, member_ID) VALUES ('80-902734-7-6', 20);
-go
-
+insert into Borrows.Loans (isbn_ID, member_ID, checkout_date) VALUES ('80-902734-5-6', 1, dateadd(yy, -2,getdate()));
+insert into Borrows.Loans (isbn_ID, member_ID, checkout_date) VALUES ('80-902734-5-6', 2, dateadd(yy, -2,getdate()));
 select * from Borrows.Loans;
-go
+
+
+-- 1,       80-902734-5-6,  1,    2022-06-22 23:09:49.250,  ,2022-07-06 23:09:49.250,false
+-- 2,       80-902734-5-6,  2 ,   2022-06-22 23:09:49.253,  ,2022-07-06 23:09:49.253,false
 
 -- populate table Borrows.Reservations
 insert into Borrows.Reservations (isbn_ID, member_ID, log_date) VALUES ('80-902734-1-6', 1, CONVERT(date, GETDATE()));
@@ -48,8 +51,6 @@ insert into Borrows.Reservations (isbn_ID, member_ID) VALUES ('80-902734-1-8', 1
 insert into Borrows.Reservations (isbn_ID, member_ID) VALUES ('80-902734-1-8', 18);
 insert into Borrows.Reservations (isbn_ID, member_ID) VALUES ('80-902734-1-8', 19);
 insert into Borrows.Reservations (isbn_ID, member_ID) VALUES ('80-902734-1-8', 20);
-go
-
 select * from Borrows.Reservations
 ;
 go

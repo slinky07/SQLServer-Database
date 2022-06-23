@@ -1,5 +1,5 @@
-use AragonMunicipalLibrary
-;
+-- use AragonMunicipalLibrary
+-- ;
 /*
 author: Francis Sauve
  what are the library's peak hours for loans?
@@ -29,5 +29,4 @@ begin
 end
 ;
 go
-
 exec Borrows.sp_getPeakHours;

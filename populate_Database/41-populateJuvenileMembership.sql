@@ -1,4 +1,4 @@
-use AragonMunicipalLibrary;
+-- use AragonMunicipalLibrary;
 -- populate table Membership.Membership (Juveniles)
 insert into Membership.Members (first_name, middle_name, last_name, date_of_birth) values ('Boolay', 'Mio', 'Lion', '2012-01-01')
 insert into Membership.Members (first_name, last_name, date_of_birth) values ('Mia', 'Pinata', '2012-01-01')
