@@ -12,7 +12,7 @@ create function Borrows.percentLoanedLastYear(@isbn char(13), @member_ID int)
         declare @reservesCount int;
 
         set @copyID = (
-            select ([Copy Number])
+            select (count([Copy Number]))
             from Question_Two_View
         )
 

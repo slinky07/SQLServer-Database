@@ -13,7 +13,7 @@ create view Borrows.OverdueView as
            ol.isbn_ID,
            ol.checkout_date,
            ol.due_date
-from Borrows.OnloanView as ol
+from Borrows.OnLoanView as ol
 where (due_date < getdate())
 ;
 go
@@ -23,3 +23,5 @@ go
 select * from Borrows.OverdueView
 ;
 go
+
+-- drop view Borrows.OverdueView;

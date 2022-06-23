@@ -24,3 +24,7 @@ ALTER TABLE ItemCollection.Copies ADD loanable char(1) default 'N'
 -- drop column loanable
 -- ;
 -- go
+
+alter table ItemCollection.Copies ADD on_reserve int
+
+select * from ItemCollection.Copies
