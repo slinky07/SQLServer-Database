@@ -15,4 +15,3 @@ create table Borrows.Loans
 ;
 go
 
-select * from Borrows.Loans;
