@@ -8,6 +8,7 @@ create table ItemCollection.Copies
     copy_ID  int not null IDENTITY (1,1) PRIMARY KEY,
     copy_amt int not null,
     on_loan  int not null,
+    on_reserve int not null
 --     loanable bit not null -- BOOLEAN
 )
 ;

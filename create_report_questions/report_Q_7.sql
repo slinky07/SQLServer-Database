@@ -29,5 +29,4 @@ begin
 end
 ;
 go
-
 exec Borrows.sp_getPeakHours;
