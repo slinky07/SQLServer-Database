@@ -55,3 +55,7 @@ alter table Membership.Members
     DEFAULT '' for middle_name
 ;
 go
+
+alter table ItemCollection.Copies
+    ADD CONSTRAINT df_on_reserve
+    DEFAULT 0 for on_reserve
