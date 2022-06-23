@@ -10,7 +10,7 @@ delete from ItemCollection.Genres;
 delete from ItemCollection.GenresComposite
 delete from ItemCollection.Items;
 delete from ItemCollection.Titles;
-delete from ItemCollection.Publisher;
+delete from ItemCollection.Publishers;
 
 
 delete from Membership.Addresses;

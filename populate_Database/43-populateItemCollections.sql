@@ -22,20 +22,20 @@ select * from ItemCollection.Genres;
 go
 
 -- populate table ItemCollection.publisher
-insert into ItemCollection.Publisher (publisher) values ('Random House');
-insert into ItemCollection.Publisher (publisher) values ('Harper Collins');
-insert into ItemCollection.Publisher (publisher) values ('Penguin Books');
-insert into ItemCollection.Publisher (publisher) values ('Simon & Schuster');
-insert into ItemCollection.Publisher (publisher) values ('Bantam Books');
-insert into ItemCollection.Publisher (publisher) values ('Doubleday');
-insert into ItemCollection.Publisher (publisher) values ('Vintage Books');
-insert into ItemCollection.Publisher (publisher) values ('Scholastic');
-insert into ItemCollection.Publisher (publisher) values ('Harper Business');
-insert into ItemCollection.Publisher (publisher) values ('Harper Paperbacks');
-insert into ItemCollection.Publisher (publisher) values ('Harper Collins');
+insert into ItemCollection.Publishers (publisher) values ('Random House');
+insert into ItemCollection.Publishers (publisher) values ('Harper Collins');
+insert into ItemCollection.Publishers (publisher) values ('Penguin Books');
+insert into ItemCollection.Publishers (publisher) values ('Simon & Schuster');
+insert into ItemCollection.Publishers (publisher) values ('Bantam Books');
+insert into ItemCollection.Publishers (publisher) values ('Doubleday');
+insert into ItemCollection.Publishers (publisher) values ('Vintage Books');
+insert into ItemCollection.Publishers (publisher) values ('Scholastic');
+insert into ItemCollection.Publishers (publisher) values ('Harper Business');
+insert into ItemCollection.Publishers (publisher) values ('Harper Paperbacks');
+insert into ItemCollection.Publishers (publisher) values ('Harper Collins');
 
 go
-select * from ItemCollection.Publisher;
+select * from ItemCollection.Publishers;
 go
 
 -- populate table ItemCollection.author

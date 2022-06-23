@@ -22,7 +22,7 @@ select i.isbn_ID     as 'isbn_ID',
        c.loanable    as 'loanable' -- Hershey: added
 
 from ItemCollection.Copies as c,
-     ItemCollection.Publisher as p,
+     ItemCollection.Publishers as p,
      ItemCollection.Titles as t,
      ItemCollection.Items as i
 

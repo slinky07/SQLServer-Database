@@ -58,7 +58,7 @@ go
 
 alter table ItemCollection.Titles
     ADD CONSTRAINT fk_titles_publishers
-    FOREIGN KEY (publisher_ID) REFERENCES ItemCollection.Publisher(publisher_ID)
+    FOREIGN KEY (publisher_ID) REFERENCES ItemCollection.Publishers(publisher_ID)
 ;
 go
 
