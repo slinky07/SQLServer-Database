@@ -2,9 +2,9 @@
 Create a view and save it as LoanableView that queries CopywideView (3-table join). Lists complete
 information about each copy marked as loanable (loanable = 'Y').
  */
-use AragonMunicipalLibrary
-;
-go
+-- use AragonMunicipalLibrary
+-- ;
+-- go
 
 create view Borrows.LoanableView as
 select c.isbn_ID,

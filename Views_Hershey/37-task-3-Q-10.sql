@@ -1,9 +1,9 @@
 /* 10. Create a view and save it as OverdueView that queries OnloanView (3-table join.) Lists the member,
 title, and loan information of a copy on loan that is overdue (due_date < current date). */
 
-use AragonMunicipalLibrary
-;
-go
+-- use AragonMunicipalLibrary
+-- ;
+-- go
 
 create view Borrows.OverdueView as
     select ol.member_id,

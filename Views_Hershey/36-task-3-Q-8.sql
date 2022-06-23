@@ -1,9 +1,9 @@
 /* Create a view and save it as OnshelfView that queries CopywideView (3-table join). Lists complete
 information about each copy that is not currently on loan (on_loan ='N'). */
 
-use AragonMunicipalLibrary
-;
-go
+-- use AragonMunicipalLibrary
+-- ;
+-- go
 
 
 create view Borrows.OnShelfView as

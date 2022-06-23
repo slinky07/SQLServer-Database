@@ -1,5 +1,5 @@
-use AragonMunicipalLibrary;
-go
+-- use AragonMunicipalLibrary;
+-- go
 
 /*
  Write and execute a query to retrieve the member’s full name and member_no from the member table and the isbn and log_date values from the reservation table for members 250, 341, 1675. Order the results by member_no. You should show information for these members, even if they have no books or reserve.
