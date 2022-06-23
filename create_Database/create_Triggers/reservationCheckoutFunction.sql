@@ -1,4 +1,4 @@
-use AragonMunicipalLibrary2
+use AragonMunicipalLibrary
 ;
 go
 
