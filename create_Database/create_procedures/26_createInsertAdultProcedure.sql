@@ -1,4 +1,4 @@
-use AragonMunicipalLibrary;
+-- use AragonMunicipalLibrary;
 
 create procedure Membership.sp_insert_adults (
     @member_id int,
