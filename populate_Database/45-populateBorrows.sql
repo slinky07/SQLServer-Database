@@ -32,11 +32,6 @@ insert into Borrows.Reservations (isbn_ID, member_ID) VALUES ('80-902734-1-8', 1
 insert into Borrows.Reservations (isbn_ID, member_ID) VALUES ('80-902734-1-8', 13);
 insert into Borrows.Reservations (isbn_ID, member_ID) VALUES ('80-902734-1-8', 14);
 insert into Borrows.Reservations (isbn_ID, member_ID) VALUES ('80-902734-1-8', 15);
-insert into Borrows.Reservations (isbn_ID, member_ID) VALUES ('80-902734-1-8', 16);
-insert into Borrows.Reservations (isbn_ID, member_ID) VALUES ('80-902734-1-8', 17);
-insert into Borrows.Reservations (isbn_ID, member_ID) VALUES ('80-902734-1-8', 18);
-insert into Borrows.Reservations (isbn_ID, member_ID) VALUES ('80-902734-1-8', 19);
-insert into Borrows.Reservations (isbn_ID, member_ID) VALUES ('80-902734-1-8', 20);
 select * from Borrows.Reservations
 ;
 go
